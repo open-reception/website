@@ -4,9 +4,14 @@ import starlight from "@astrojs/starlight";
 
 // https://astro.build/config
 export default defineConfig({
+  i18n: {
+    locales: ["en", "de"],
+    defaultLocale: "en",
+  },
   integrations: [
     starlight({
       title: "OpenReception",
+      defaultLocale: "en",
       head: [
         {
           tag: "script",
@@ -29,13 +34,10 @@ export default defineConfig({
         },
       ],
       sidebar: [
-        // {
-        //   label: "Guides",
-        //   items: [
-        //     // Each item here is one entry in the navigation menu.
-        //     {label: "Example Guide", slug: "guides/example"},
-        //   ],
-        // },
+        {
+          label: "Research",
+          autogenerate: {directory: "research"},
+        },
         // {
         //   label: "Reference",
         //   autogenerate: {directory: "reference"},
