@@ -9,11 +9,11 @@ Für die praxisnahe Entwicklung führen wir eine Problemanalyse durch.
 
 ## Was wird hier entwickelt?
 
-Wir entwickeln eine verschlüsselte Terminbuchungsplatform auf der Ihre Patienten Termine bei Ihnen buchen können. **Alle Informationen darin sind verschlüsselt** und stehen nur Ihnen und Ihren Patienten zur Verfügung.
+Wir entwickeln eine verschlüsselte Terminbuchungsplattform auf der Ihre Patienten Termine bei Ihnen buchen können. **Alle Informationen darin sind verschlüsselt** und stehen nur Ihnen und Ihren Patienten zur Verfügung.
 
 ## Was bringt mir das?
 
-Wenn Sie aktuell andere Anbieter einsetzen und Ihren kompletten Patientenstamm dort (evtl. automatisch) hochladen, bewegen sich in einem gesetzlichen Graubereich.
+Wenn Sie aktuell andere Anbieter einsetzen und Ihren kompletten Patientenstamm dort (evtl. automatisch) hochladen, bewegen sich in einem rechtlichen Graubereich.
 
 Sie nutzen eine Auftragsverarbeitung. Diese Dienstleister verarbeiten diese Daten aber evtl. nicht nur für Ihre Zwecke weiter. Außerdem haben Ihre Patienten dieser Praxis im Zweifel nicht zugestimmt.
 
@@ -25,19 +25,19 @@ Praxen die sich an der Entwicklung beteiligen,
 
 - können das **Ergebnis mitgestalten**,
 - werden von uns **zuerst mit der Software versorgt**,
-- erhalten einen **exklusiven Rabatt für die Buchung einer Terminbuchungsplatform**.
+- erhalten einen **exklusiven Rabatt für die Buchung einer Terminbuchungsplattform**.
 
 ## Was erwartet mich?
 
-In einem 15- bis 30-minütigem Gespräch sprechen wir über
+In einem 15- bis 30-minütigen Gespräch sprechen wir über
 
 - die Abläufe innerhalb Ihrer Praxis,
 - welche Software Sie evtl. aktuell schon einsetzen und
 - welche Probleme Sie mit der aktuellen Lösung haben.
 
-Wir führen dieses Gespräch in Rahmen einer Videokonferenz oder einem Telefonat druch.
+Wir führen dieses Gespräch in Rahmen einer Videokonferenz oder einem Telefonat durch.
 
-Im weiteren Verlauf des Projekts führen wir Lösungsinterviews druch, die etwa 30 Minuten dauern. Die Teilnahme daran ist optional.
+Im weiteren Verlauf des Projekts führen wir Lösungsinterviews durch, die etwa 30 Minuten dauern. Die Teilnahme daran ist optional.
 
 ## Wie kann ich mitmachen?
 
