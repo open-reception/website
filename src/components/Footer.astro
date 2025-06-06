@@ -1,7 +1,6 @@
 ---
 import {getLangFromUrl, useTranslations} from "../i18n/utils";
 
-// @ts-expect-error
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
@@ -10,7 +9,7 @@ const t = useTranslations(lang);
   <div class="flex flex-col gap-4">
     <div class="text-gray-500">{t("footer.fundingFrom")}:</div>
     <div
-      class="flex gap-10 items-start dark:bg-white dark:px-4 py-5 rounded-xl"
+      class="flex flex-wrap gap-5 md:gap-10 items-start dark:bg-white dark:px-4 py-5 rounded-xl"
     >
       <a href="https://www.bmbf.de" target="_blank">
         <img
