@@ -1,6 +1,7 @@
 // @ts-check
 import {defineConfig} from "astro/config";
 import starlight from "@astrojs/starlight";
+import tailwindcss from "@tailwindcss/vite";
 
 // https://astro.build/config
 export default defineConfig({
@@ -8,10 +9,12 @@ export default defineConfig({
     locales: ["en", "de"],
     defaultLocale: "en",
   },
+  prefetch: true,
   integrations: [
     starlight({
       title: "OpenReception",
       defaultLocale: "en",
+      customCss: ["./src/styles/custom.css"],
       head: [
         {
           tag: "script",
@@ -32,16 +35,22 @@ export default defineConfig({
           label: "GitHub",
           href: "https://github.com/open-reception/appointment-booking-software",
         },
+        {
+          icon: "mastodon",
+          label: "Mastodon",
+          href: "https://mastodon.social/@openreception",
+        },
+        {
+          icon: "blueSky",
+          label: "Bluesky",
+          href: "https://bsky.app/profile/openreception.bsky.social",
+        },
       ],
       sidebar: [
         {
           label: "Research",
           autogenerate: {directory: "research"},
         },
-        // {
-        //   label: "Reference",
-        //   autogenerate: {directory: "reference"},
-        // },
       ],
       components: {
         Footer: "./src/components/Footer.astro",
@@ -49,4 +58,7 @@ export default defineConfig({
       },
     }),
   ],
+  vite: {
+    plugins: [tailwindcss()],
+  },
 });

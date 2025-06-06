@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@layer base {
+
+    ol,
+    ul,
+    menu {
+        list-style: inherit;
+        padding-left: 1.5rem;
+    }
+}
