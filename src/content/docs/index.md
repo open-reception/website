@@ -8,6 +8,9 @@ banner:
     <a href="/research/problem-analysis" class="underline">Participate in our development</a>
 hero:
   tagline: End-to-end encrypted appointment booking platform.
+  image:
+    alt: Logo - Calendar and lock in one
+    file: ../../assets/open-reception-logo.svg
   actions:
     - text: View on GitHub
       link: https://github.com/open-reception/appointment-booking-software

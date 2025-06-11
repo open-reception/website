@@ -2,9 +2,11 @@
 import {defineConfig} from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
+import starlightThemeNova from "starlight-theme-nova";
 
 // https://astro.build/config
 export default defineConfig({
+  site: "https://open-reception.org",
   i18n: {
     locales: ["en", "de"],
     defaultLocale: "en",
@@ -12,9 +14,13 @@ export default defineConfig({
   prefetch: true,
   integrations: [
     starlight({
+      plugins: [starlightThemeNova()],
       title: "OpenReception",
       defaultLocale: "en",
       customCss: ["./src/styles/custom.css"],
+      logo: {
+        src: "./src/assets/open-reception-logo.svg",
+      },
       head: [
         {
           tag: "script",
@@ -52,6 +58,9 @@ export default defineConfig({
           autogenerate: {directory: "research"},
         },
       ],
+      editLink: {
+        baseUrl: "https://github.com/open-reception/website/edit/main/",
+      },
       components: {
         Footer: "./src/components/Footer.astro",
         Search: "./src/components/Search.astro",

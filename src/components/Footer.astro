@@ -1,11 +1,13 @@
 ---
+import Default from "@astrojs/starlight/components/Footer.astro";
 import {getLangFromUrl, useTranslations} from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<footer class="flex flex-col gap-8 pt-10">
+<Default><slot /></Default>
+<div class="flex flex-col gap-8">
   <div class="flex flex-col gap-4">
     <div class="text-gray-500">{t("footer.fundingFrom")}:</div>
     <div
@@ -32,4 +34,4 @@ const t = useTranslations(lang);
     <a href="https://ludwigweise.de/impressum">{t("footer.imprint")}</a> |
     <a href="https://ludwigweise.de/datenschutz">{t("footer.privacy")}</a>
   </div>
-</footer>
+</div>

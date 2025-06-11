@@ -8,6 +8,9 @@ banner:
     <a href="/de/research/problem-analysis" class="underline">Nehmen Sie an unserer Problemanalyse teil</a>
 hero:
   tagline: Ende-zu-Ende verschlüsselte Platform für Terminbuchung.
+  image:
+    alt: Logo - Kalender und Schloss in Einem
+    file: ../../../assets/open-reception-logo.svg
   actions:
     - text: Auf GitHub ansehen
       link: https://github.com/open-reception/appointment-booking-software
