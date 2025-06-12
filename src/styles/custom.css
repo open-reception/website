@@ -9,4 +9,8 @@
         list-style: inherit;
         padding-left: 1.5rem;
     }
+
+    a {
+        text-decoration: underline;
+    }
 }
