@@ -25,7 +25,8 @@ Praxen die sich an der Entwicklung beteiligen,
 
 - können das **Ergebnis mitgestalten**,
 - werden von uns **zuerst mit der Software versorgt**,
-- erhalten einen **exklusiven Rabatt für die Buchung einer Terminbuchungsplattform**.
+- erhalten einen **exklusiven Rabatt für die Buchung einer Terminbuchungsplattform**,
+- werden auf Wunsch in unserem Bericht **auf der Website genannt** (inkl. Link wenn gewünscht).
 
 ## Was erwartet mich?
 

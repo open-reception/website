@@ -25,7 +25,8 @@ Practices that participate in the development:
 
 - can **help shape the outcome**,
 - will be **the first to receive the software**,
-- receive an **exclusive discount for booking an appointment booking platform**.
+- receive an **exclusive discount for booking an appointment booking platform**,
+- will be **mentioned on the website** in our report upon request (including link if desired).
 
 ## What can I expect?
 
