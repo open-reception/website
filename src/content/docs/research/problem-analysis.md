@@ -1,5 +1,5 @@
 ---
-title: Problem Analysis
+title: Problem Analysis Interview
 description: Join our research and test group
 ---
 
@@ -30,7 +30,7 @@ Practices that participate in the development:
 
 ## What can I expect?
 
-In a 15 to 30-minute conversation, we will discuss:
+In an about 15-minute conversation, we will discuss:
 
 - the workflows within your practice,
 - which software you might currently be using, and
@@ -38,7 +38,7 @@ In a 15 to 30-minute conversation, we will discuss:
 
 We conduct this conversation via video conference or telephone.
 
-During the course of the project, we conduct solution interviews that last about 30 minutes. Participation in these is optional.
+During the course of the project, we conduct solution interviews that last about 15 to 30 minutes. Participation in these is optional.
 
 ## How can I participate?
 

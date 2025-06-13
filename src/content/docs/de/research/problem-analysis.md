@@ -1,5 +1,5 @@
 ---
-title: Problemanalyse
+title: Problemanalyse Interview
 description: Treten Sie unserer Forschungs- und Testgruppe bei
 ---
 
@@ -30,7 +30,7 @@ Praxen die sich an der Entwicklung beteiligen,
 
 ## Was erwartet mich?
 
-In einem 15- bis 30-minütigen Gespräch sprechen wir über
+In einem etwa 15-minütigen Gespräch sprechen wir über
 
 - die Abläufe innerhalb Ihrer Praxis,
 - welche Software Sie evtl. aktuell schon einsetzen und
@@ -38,7 +38,7 @@ In einem 15- bis 30-minütigen Gespräch sprechen wir über
 
 Wir führen dieses Gespräch in Rahmen einer Videokonferenz oder einem Telefonat durch.
 
-Im weiteren Verlauf des Projekts führen wir Lösungsinterviews durch, die etwa 30 Minuten dauern. Die Teilnahme daran ist optional.
+Im weiteren Verlauf des Projekts führen wir Lösungsinterviews durch, die etwa 15-30 Minuten dauern. Die Teilnahme daran ist optional.
 
 ## Wie kann ich mitmachen?
 

@@ -56,6 +56,9 @@ export default defineConfig({
         {
           label: "Research",
           autogenerate: {directory: "research"},
+          translations: {
+            de: "Recherche",
+          },
         },
       ],
       editLink: {
