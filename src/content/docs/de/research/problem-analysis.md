@@ -1,45 +1,83 @@
 ---
-title: Problemanalyse Interview
-description: Treten Sie unserer Forschungs- und Testgruppe bei
+title: Problemanalyse
+description: Die Ergebnisse unserer Problemanalyse
 ---
 
-Dies ist ein Forschungsprojekt, das vom [Bundesministerium für Forschung, Technologie und Raumfahrt](https://www.bmbf.de) sowie dem [PrototypeFund](https://prototypefund.de/) gefördert wird.
+Wir haben im Juni und Juli 2025 qualitative Interviews mit Arztpraxen geführt. Dabei haben wir Ärzte und deren Personal zu _Problemen_ bei der Buchung von Online-Terminen befragt. Die Ergebnisse fließen in die Konzeption und Gestaltung von OpenReception ein.
 
-Für die praxisnahe Entwicklung führen wir eine Problemanalyse durch.
+> Auch wenn wir eine Online-Terminbuchung am Beispiel von Arztpraxen entwickeln, wollen wir ein allgemeingültiges Tool entwickeln.
 
-## Was wird hier entwickelt?
+## Wie liefen die Interviews ab?
 
-Wir entwickeln eine verschlüsselte Terminbuchungsplattform auf der Ihre Patienten Termine bei Ihnen buchen können. **Alle Informationen darin sind verschlüsselt** und stehen nur Ihnen und Ihren Patienten zur Verfügung.
+Wir haben strukturierte Interviews mit interessierten Praxen geführt. Darin haben wir in einem etwa 15-minütigen Gespräch
 
-## Was bringt mir das?
+- die Abläufe innerhalb ihrer Praxis,
+- welche Software eventuell aktuell schon eingesetzt wird und
+- welche Probleme mit der aktuellen Lösung bestehen
 
-Wenn Sie aktuell andere Anbieter einsetzen und Ihren kompletten Patientenstamm dort (evtl. automatisch) hochladen, bewegen sich in einem rechtlichen Graubereich.
+abgefragt. Dieses Gespräch haben wir zunächst mit Praxisinhabern (Ärzten) sowie im Anschluss mit deren Personal geführt. So konnten wir Unterschiede in der Zufriedenheit und Bewertung von Problemen feststellen.
 
-Sie nutzen eine Auftragsverarbeitung. Diese Dienstleister verarbeiten diese Daten aber evtl. nicht nur für Ihre Zwecke weiter. Außerdem haben Ihre Patienten dieser Praxis im Zweifel nicht zugestimmt.
+Zusätzlich haben wir viele implizite (weniger strukturierte) Interviews mit Ärztinnen und Ärzten geführt.
 
-Wenn Sie OpenReception in Zukunft einsetzen, werden sie **weniger Unterschriften einsammeln müssen** und volle Kontrolle über Ihre Patientendaten haben.
+## Identifizierte Probleme
 
-Außerdem wird **OpenReception deutlich günstiger als andere Anbieter** sein.
+In unseren Gesprächen haben wir mit unseren Interviewpartnern folgende Probleme und Anforderungen identifiziert:
 
-Praxen die sich an der Entwicklung beteiligen,
+- Patienten wissen nicht, welchen Termin sie benötigen. Dann muss oft Rücksprache gehalten werden.
+- Freie Arztwahl muss möglich sein.
+- (Manche) Termine bedürfen einer Bestätigung.
+- (Manche) Termine dürfen nur unter bestimmten Bedingungen angeboten werden (bisher wird dafür ein Code herausgegeben).
+- Daten, die Patienten angeben, sind oft unvollständig (Telefonnummer, E-Mail-Adresse fehlen oft).
+- Ein individueller Fragebogen fehlt.
+- Bei einem Anbieter ist es schwer, einen Kalendereintrag sowie zugehörige Patienten und Nachrichten zu finden.
+- Bei einem Anbieter ist die Terminverschiebung relativ umständlich.
+- Bei einem Anbieter ist es schwer zu erkennen, um welche Art von Termin es sich handelt, wenn ein Termin noch nicht belegt ist.
+- Bei angebotenen Terminen muss klar sein, dass der/die betreffende Ärztin da ist.
+- Kalender- und Praxissystem sprechen nicht miteinander; wenn Schnittstellen vorhanden sind, sind diese sehr teuer.
+- Bei einem Anbieter müsste man bei der Auswertung von Patientendaten die Filter selbst wählen können (Controlling).
 
-- können das **Ergebnis mitgestalten**,
-- werden von uns **zuerst mit der Software versorgt**,
-- erhalten einen **exklusiven Rabatt für die Buchung einer Terminbuchungsplattform**,
-- werden auf Wunsch in unserem Bericht **auf der Website genannt** (inkl. Link wenn gewünscht).
+### Weitere Ergebnisse
 
-## Was erwartet mich?
+- Die Verwendung von Slots (Zeitfenstern) wird oft bevorzugt, da diese auf Basis von Praxisabläufen erstellt werden können.
+- Manche Termine soll nur das Personal buchen können.
+- Manche Termine sollen externe Ärzte buchen können (geringe Nutzung).
+- Es muss eine Möglichkeit geben, Abwesenheiten zu planen.
+- Ärzte allein können nicht die Grundlage für die verfügbaren Termine sein. Vielmehr muss es ein Mix aus Ärzten und Geräten/Räumen/Untersuchungen sein.
 
-In einem etwa 15-minütigen Gespräch sprechen wir über
+## Strukturelle Entscheidungen
 
-- die Abläufe innerhalb Ihrer Praxis,
-- welche Software Sie evtl. aktuell schon einsetzen und
-- welche Probleme Sie mit der aktuellen Lösung haben.
+Auf Basis der identifizierten Probleme haben wir einige strukturelle Entscheidungen für OpenReception getroffen:
 
-Wir führen dieses Gespräch in Rahmen einer Videokonferenz oder einem Telefonat durch.
+- Wir arbeiten mit Kanälen. Dies können Untersuchungen, Räume oder Geräte sein. Kanäle enthalten Slots, die nach einem beliebigen Muster erzeugt werden.
+- Wir arbeiten mit Akteuren, dies können Ärzte, Abteilungen oder Gruppen sein. Es müssen keine Akteure angelegt werden.
+- Akteure können Kanälen zugewiesen werden. Ist das erfolgt, wird die Verfügbarkeit des Akteurs dadurch beeinflusst. So können Arbeitstage geplant werden.
+- Kanäle, denen keine Akteure zugeordnet sind, laufen nebenher.
+- Kanäle können als nicht-öffentlich markiert werden, damit nur Praxispersonal dort einen Termin einbuchen kann.
+- Je Kanal kann eingestellt werden, ob eine Bestätigung eines Termins durch die Praxis erfolgen muss.
+- Kanäle können deaktiviert werden, damit Patienten darin keine neuen Termine buchen.
+- E-Mail-Adressen und Telefonnummern von Patienten, die einen Termin buchen wollen, können auf Mandantenebene als erforderliche Eingaben festgelegt werden.
 
-Im weiteren Verlauf des Projekts führen wir Lösungsinterviews durch, die etwa 15-30 Minuten dauern. Die Teilnahme daran ist optional.
+## Identifizierte User-Stories
 
-## Wie kann ich mitmachen?
+In unseren Interviews haben wir folgende User-Stories (Nutzeranforderungen) identifiziert:
 
-Schreiben Sie uns persönlich auf dem Kanal auf dem wir Sie angeschrieben haben oder melden Sie sich per E-Mail unter _team[at]open-reception.org_.
+### Technisches Setup
+
+- Setup durch einen System-Admin
+- Hinzufügen eines Mandanten durch einen System-Admin
+- Mandant wird eingeladen und richtet sein Termin-Portal ein
+- Mandant erzeugt Kanal
+
+### Termine
+
+- Ein Klient bucht einen Termin
+- Eine Praxis belegt einen Termin mit einer Person am Telefon
+- Eine Praxis erhält eine Terminanfrage (die bestätigt werden muss)
+- Ein Klient möchte einen Termin absagen
+- Ein Klient möchte einen Termin verschieben
+- Ein Klient geht zu einem Termin
+- Das Praxispersonal empfängt einen Klienten mit Termin an der Anmeldung
+- Ein Akteur ist nicht verfügbar. Termine müssen umgebucht/abgesagt werden
+- Ein Klient wird informiert, dass ein Akteur nicht verfügbar ist
+
+Neben den Anforderungen, die wir durch unsere Probleminterviews herausgearbeitet haben, ergeben sich weitere Anforderungen, auf die wir an dieser Stelle nicht eingehen. Diese sind zumeist technischer Natur und sollen den reibungslosen Betrieb und die Sicherheit der Patientendaten gewährleisten.

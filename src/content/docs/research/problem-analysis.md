@@ -1,45 +1,83 @@
 ---
-title: Problem Analysis Interview
-description: Join our research and test group
+title: Problem Analysis
+description: The Results of Our Problem Analysis
 ---
 
-This is a research project funded by the [Federal Ministry of Research, Technology and Space](https://www.bmbf.de) and the [PrototypeFund](https://prototypefund.de/).
+In June and July 2025, we conducted qualitative interviews with medical practices. We interviewed doctors and their staff about _problems_ with online appointment booking. The results will be incorporated into the conception and design of OpenReception.
 
-We are conducting a problem analysis for practical development.
+> Although we are developing an online appointment booking system using medical practices as an example, we aim to create a universally applicable tool.
 
-## What is being developed here?
+## How Were the Interviews Conducted?
 
-We are developing an encrypted appointment booking platform where your patients can book appointments with you. **All information within is encrypted** and is only available to you and your patients.
+We conducted structured interviews with interested practices. In approximately 15-minute conversations, we inquired about:
 
-## What's in it for me?
+- The workflows within their practice
+- What software they currently use, if any
+- What problems exist with their current solution
 
-If you currently use other providers and upload your entire patient base there (possibly automatically), you are operating in a legal grey area.
+We first conducted these conversations with practice owners (doctors) and then with their staff. This allowed us to identify differences in satisfaction and problem assessment.
 
-You are using order processing. However, these service providers may not process this data solely for your purposes. Additionally, your patients may not have consented to this practice.
+Additionally, we conducted many implicit (less structured) interviews with physicians.
 
-When you use OpenReception in the future, you will **need to collect fewer signatures** and have full control over your patient data.
+## Identified Problems
 
-Furthermore, **OpenReception will be significantly cheaper than other providers**.
+In our conversations with our interview partners, we identified the following problems and requirements:
 
-Practices that participate in the development:
+- Patients don't know which type of appointment they need. This often requires follow-up communication.
+- Free choice of doctor must be possible.
+- (Some) appointments require confirmation.
+- (Some) appointments may only be offered under specific conditions (currently managed through code distribution).
+- Patient-provided data is often incomplete (phone numbers, email addresses often missing).
+- An individualized questionnaire is missing.
+- With one provider, it's difficult to find calendar entries and associated patients and messages.
+- With one provider, rescheduling appointments is relatively complicated.
+- With one provider, it's difficult to identify the type of appointment when it's not yet booked.
+- For offered appointments, it must be clear that the respective doctor is available.
+- Calendar and practice systems don't communicate; when interfaces exist, they are very expensive.
+- With one provider, users should be able to choose their own filters when analyzing patient data (controlling).
 
-- can **help shape the outcome**,
-- will be **the first to receive the software**,
-- receive an **exclusive discount for booking an appointment booking platform**,
-- will be **mentioned on the website** in our report upon request (including link if desired).
+### Additional Findings
 
-## What can I expect?
+- The use of slots (time windows) is often preferred as they can be created based on practice workflows.
+- Some appointments should only be bookable by staff.
+- Some appointments should be bookable by external doctors (low usage).
+- There must be a way to plan absences.
+- Doctors alone cannot be the basis for available appointments. Rather, it must be a mix of doctors and equipment/rooms/examinations.
 
-In an about 15-minute conversation, we will discuss:
+## Structural Decisions
 
-- the workflows within your practice,
-- which software you might currently be using, and
-- what problems you have with the current solution.
+Based on the identified problems, we made several structural decisions for OpenReception:
 
-We conduct this conversation via video conference or telephone.
+- We work with channels. These can be examinations, rooms, or equipment. Channels contain slots that are generated according to any pattern.
+- We work with actors, which can be doctors, departments, or groups. Actors are not mandatory.
+- Actors can be assigned to channels. Once done, this affects the actor's availability. This allows for workday planning.
+- Channels without assigned actors run independently.
+- Channels can be marked as non-public so only practice staff can book appointments.
+- For each channel, it can be set whether appointment confirmation by the practice is required.
+- Channels can be deactivated to prevent patients from booking new appointments.
+- Email addresses and phone numbers of patients wanting to book appointments can be set as required fields at the tenant level.
 
-During the course of the project, we conduct solution interviews that last about 15 to 30 minutes. Participation in these is optional.
+## Identified User Stories
 
-## How can I participate?
+In our interviews, we identified the following user stories (user requirements):
 
-Write to us personally through the channel where we contacted you or get in touch via email at _team[at]open-reception.org_.
+### Technical Setup
+
+- Setup by a system admin
+- Adding a tenant by a system admin
+- Tenant is invited and sets up their appointment portal
+- Tenant creates channel
+
+### Appointments
+
+- A client books an appointment
+- A practice schedules an appointment with a person by phone
+- A practice receives an appointment request (requiring confirmation)
+- A client wants to cancel an appointment
+- A client wants to reschedule an appointment
+- A client attends an appointment
+- Practice staff receives a client with an appointment at check-in
+- An actor is unavailable. Appointments must be rescheduled/canceled
+- A client is informed that an actor is unavailable
+
+Beyond the requirements we identified through our problem interviews, there are additional requirements that we won't address here. These are mostly technical in nature and should ensure smooth operation and security of patient data.
