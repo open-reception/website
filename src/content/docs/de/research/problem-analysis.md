@@ -73,11 +73,11 @@ In unseren Interviews haben wir folgende User-Stories (Nutzeranforderungen) iden
 - Ein Klient bucht einen Termin
 - Eine Praxis belegt einen Termin mit einer Person am Telefon
 - Eine Praxis erhält eine Terminanfrage (die bestätigt werden muss)
-- Ein Klient möchte einen Termin absagen
-- Ein Klient möchte einen Termin verschieben
+- Ein Klient sagt einen Termin ab
+- Das Praxispersonal sagt einen Termin ab
 - Ein Klient geht zu einem Termin
 - Das Praxispersonal empfängt einen Klienten mit Termin an der Anmeldung
-- Ein Akteur ist nicht verfügbar. Termine müssen umgebucht/abgesagt werden
-- Ein Klient wird informiert, dass ein Akteur nicht verfügbar ist
+- Das Praxispersonal bucht einen Termin für einen Klienten am Telefon
+- Ein Akteur ist nicht verfügbar. Das Praxispersonal stellt eine Abwesenheit ein
 
 Neben den Anforderungen, die wir durch unsere Probleminterviews herausgearbeitet haben, ergeben sich weitere Anforderungen, auf die wir an dieser Stelle nicht eingehen. Diese sind zumeist technischer Natur und sollen den reibungslosen Betrieb und die Sicherheit der Patientendaten gewährleisten.

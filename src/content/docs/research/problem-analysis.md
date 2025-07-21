@@ -71,13 +71,13 @@ In our interviews, we identified the following user stories (user requirements):
 ### Appointments
 
 - A client books an appointment
-- A practice schedules an appointment with a person by phone
-- A practice receives an appointment request (requiring confirmation)
-- A client wants to cancel an appointment
-- A client wants to reschedule an appointment
+- A practice schedules an appointment with a person on the phone
+- A practice receives an appointment request (which must be confirmed)
+- A client cancels an appointment
+- The practice staff cancels an appointment
 - A client attends an appointment
-- Practice staff receives a client with an appointment at check-in
-- An actor is unavailable. Appointments must be rescheduled/canceled
-- A client is informed that an actor is unavailable
+- The practice staff receives a client with an appointment at the reception
+- The practice staff books an appointment for a client on the phone
+- A practitioner is not available. The practice staff sets an absence
 
 Beyond the requirements we identified through our problem interviews, there are additional requirements that we won't address here. These are mostly technical in nature and should ensure smooth operation and security of patient data.
