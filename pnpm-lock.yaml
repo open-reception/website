@@ -20,6 +20,9 @@ importers:
       sharp:
         specifier: ^0.34.5
         version: 0.34.5
+      starlight-github-alerts:
+        specifier: ^0.1.1
+        version: 0.1.1(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@22.15.21)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.41.0)(typescript@5.8.3)(yaml@2.8.0)))
       starlight-theme-nova:
         specifier: ^0.10.0
         version: 0.10.0(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@22.15.21)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.41.0)(typescript@5.8.3)(yaml@2.8.0)))(typescript@5.8.3)
@@ -1887,6 +1890,12 @@ packages:
 
   space-separated-tokens@2.0.2:
     resolution: {integrity: sha512-PEGlAwrG8yXGXRjW32fGbg66JAlOAwbObuqVoJpv/mRgoWDQfgH1wDPvtzWyUSNAXBGSk8h755YDbbcEy3SH2Q==}
+
+  starlight-github-alerts@0.1.1:
+    resolution: {integrity: sha512-HzVp24sO2VoqJ65H58rh/HRBBc/DGUE5tdQYi3kkckdRHLZJUIkBa7EMF3dyiFw1rTRAzSN5t8r9riijnNvIzA==}
+    engines: {node: '>=18.17.1'}
+    peerDependencies:
+      '@astrojs/starlight': '>=0.35.0'
 
   starlight-theme-nova@0.10.0:
     resolution: {integrity: sha512-V9Amhr5eH9XA3xC5gGpVCSjkkFYcsG4K/F5itYldC6tEPguPwKZyOaUg3u4Pzj05w8xif8rA+bR5Te/BBz4UJA==}
@@ -4715,6 +4724,11 @@ snapshots:
   source-map@0.7.4: {}
 
   space-separated-tokens@2.0.2: {}
+
+  starlight-github-alerts@0.1.1(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@22.15.21)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.41.0)(typescript@5.8.3)(yaml@2.8.0))):
+    dependencies:
+      '@astrojs/starlight': 0.37.1(astro@5.16.6(@types/node@22.15.21)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.41.0)(typescript@5.8.3)(yaml@2.8.0))
+      unist-util-visit: 5.0.0
 
   starlight-theme-nova@0.10.0(@astrojs/starlight@0.37.1(astro@5.16.6(@types/node@22.15.21)(jiti@2.6.1)(lightningcss@1.30.2)(rollup@4.41.0)(typescript@5.8.3)(yaml@2.8.0)))(typescript@5.8.3):
     dependencies:
