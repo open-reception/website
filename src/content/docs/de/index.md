@@ -4,7 +4,7 @@ description: Ende-zu-Ende verschlüsselte Platform für Terminbuchung
 template: splash
 banner:
   content: |
-    OpenReception wird gerade entwickelt. Wir stellen unseren Prototypen beim <a href="https://www.prototypefund.de/" target="_blank" class="underline">DemoDay des PrototypeFunds</a> am 28. November 2025 vor.
+    🗣️ Komm' zu unserem ersten Community Meetup am 7. Januar 2026 20 Uhr MEZ! <a href="/de/community/meetup" class="underline">Meetup Details</a>
 hero:
   tagline: Ende-zu-Ende verschlüsselte Platform für Terminbuchung.
   image:
