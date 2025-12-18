@@ -4,7 +4,7 @@ description: End-to-end encrypted appointment booking platform
 template: splash
 banner:
   content: |
-    OpenReception is being developed right now. We are showing our prototype at the <a href="https://www.prototypefund.de/" target="_blank" class="underline">PrototypeFund DemoDay</a> on November 28th 2025.
+    🗣️ Join our first ever digital community meetup on January 7th 2026 8pm CET! <a href="/community/meetup" class="underline">Meetup Details</a>
 hero:
   tagline: End-to-end encrypted appointment booking platform.
   image:

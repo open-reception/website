@@ -3,6 +3,7 @@ import {defineConfig} from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
 import starlightThemeNova from "starlight-theme-nova";
+import starlightGitHubAlerts from "starlight-github-alerts";
 
 // https://astro.build/config
 export default defineConfig({
@@ -14,7 +15,7 @@ export default defineConfig({
   prefetch: true,
   integrations: [
     starlight({
-      plugins: [starlightThemeNova()],
+      plugins: [starlightThemeNova(), starlightGitHubAlerts()],
       title: "OpenReception",
       defaultLocale: "en",
       customCss: ["./src/styles/custom.css"],
@@ -53,6 +54,13 @@ export default defineConfig({
         },
       ],
       sidebar: [
+        {
+          label: "Community",
+          autogenerate: {directory: "community"},
+          translations: {
+            de: "Community",
+          },
+        },
         {
           label: "Research",
           autogenerate: {directory: "research"},
