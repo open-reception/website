@@ -1,6 +1,6 @@
 ---
 title: Code of Conduct
-description: This is the Code of Conduct for OpenReception
+description: Dies ist der Code of Conduct von OpenReception
 ---
 
 Version 1.0 vom 17. Dezember 2025
