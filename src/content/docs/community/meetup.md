@@ -7,6 +7,10 @@ description: We are holding a monthly community meetup
 Please read our [Code of Conduct](../code-of-conduct) before you join.
 :::
 
+:::danger
+We are skipping the February 2026 meetup. See you March 4, 2026.
+:::
+
 We are holding a monthly community meetup. It's **every first Wednesday of the month** from 8:00 pm to 9:00 pm CET/ CEST. Join us here: https://whereby.com/openreception
 
 ## What can I expect?

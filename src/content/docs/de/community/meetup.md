@@ -7,6 +7,10 @@ description: Es gibt eine monatliche Community-Meetup
 Bitte lies unseren [Code of Conduct](../code-of-conduct) before Du teilnimmst.
 :::
 
+:::danger
+Im February 2026 findet kein Meetup statt. Wir sehen uns am 4. März 2026.
+:::
+
 Es gibt ein monatliches Community-Meetup. Wir treffen uns **jeden ersten Mittwoch im Monat** von 20:00 bis 21:00 Uhr MEZ/ MESZ. Videoraum: https://whereby.com/openreception
 
 ## Was erwartet mich?
