@@ -1,41 +1,49 @@
 ---
-title: Solution Interview
-description: Participate in our Solution Interviews
+title: Solution Interviews
+description: Solution Interview Results for our prototype
 ---
 
-In June and July 2025, we conducted qualitative problem interviews with medical practices. We interviewed doctors and their staff about _problems_ with online appointment booking. The results are incorporated into the conception and design of OpenReception.
-
-**Now we are looking for medical practices that want to evaluate our solution in an interview.**
+In December 2025 and January 2026 we conducted qualitative solution interviews with medical practices. We showed our prototype to doctors and interviewed them about how fitting our _solution_ is for them.
 
 > Although we are developing an online appointment booking system using medical practices as an example, we aim to create a universally applicable tool.
 
-## What's in it for me?
+## How were the Interviews Conducted?
 
-If you currently use other providers and upload your entire patient base there (possibly automatically), you are operating in a legal grey area.
+We conducted structured interviews with interested practices. In approximately 30-minute conversations, we introduced our product and asked for feedback and how doctors could implement our solution into their practice.
 
-You are using order processing. However, these service providers may not process this data solely for your purposes. Additionally, your patients may not have consented to this practice.
+## Some interesting notes on demographics
 
-When you use OpenReception in the future, you will **need to collect fewer signatures** and have full control over your patient data.
+We asked for a few demographics,
 
-Furthermore, **OpenReception will be significantly cheaper than other providers**.
+- almost everyone uses Windows (no surprise here)
+- most had more than about 100 appointments per week
+- some had high tripple digit number of appointments per week (they usually also had mutiple doctors)
+- some offer up to 30 different appointment types
 
-Practices that participate in the development:
+## Findings
 
-- can **help shape the outcome**,
-- will be **the first to receive the software**,
-- receive an **exclusive discount for booking an appointment booking platform**,
-- will be **mentioned on the website** in our report upon request (including link if desired).
+This is the list of most relevant findings from our solution interviews:
 
-## What can I expect?
+- Doctors want to know why a patient is coming before they show up. Sometimes even before patients get an appointment.
+- Doctors need to prevent false bookings (petients that don't need that specific appointment).
+- Doctors fear spam appointments that will block their calendar for patients actually needing their attention.
+- Doctors want control over their schedule and booked appointments.
+- Not only doctors need to be available. Also medical staff, rooms and applicanes need to be available for an appointment to happen.
+- If paitents cancel their appointment they may fall out their regular check-up timeline. Doctors want to know when this happens, so they don't loose sight of their patients.
+- Doctors decide together with their staff on what tools to use.
 
-In about a 30-minute conversation, we will discuss:
+## Participating practices
 
-- the workflows in OpenReception and how they fit in your practice,
-- test for usability issues and
-- discuss possible issues and obstacles for implementing OpenReception in your practice
+Thank you to all doctors who participated in this interview series! Roughly two dozen doctors participated, and gave us valuable feedback on our current implementation.
 
-We conduct this conversation via video conference.
+We interviewed General Practitioners, Dentists, Eye Doctors, Radiologist, Sleep Medicine Specialist, Nuclear Medicine Specialists and Psychotherapists. Some of the doctors allowed us to thank them publically, these where:
 
-## How can I participate?
-
-Write to us personally through the channel where we contacted you or get in touch via email at _team[at]open-reception.org_.
+- Alexander Bosch
+- [Familienmedizin Dr. Marc Hanefeld](https://praxis-hanefeld.com)
+- [Gammamed Nuklearmedizin in Magdeburg](https://gammamed-pawlow.de)
+- [Narcosens Anästhesie](https://narcosens.com)
+- [Praxis Miriam Thelocka](https://praxis-thelocka.de)
+- [Radiologie Pawlow in Magdeburg](https://radiologie-pawlow.de)
+- [Schlafmedizin Ralf Warmuth](https://www.schlafdoktor.de)
+- [Zahnarztpraxis Björn Schaper](https://www.zahnarzt-schaper.de)
+- [Zahnklinik am Hedwig](https://dens.info)

@@ -1,41 +1,49 @@
 ---
-title: Lösungsinterview
-description: Nehmen Sie an unseren Lösungsinterviews teil
+title: Lösungsinterviews
+description: Ergebnisse der Lösungsinterviews für unseren Prototyp
 ---
 
-Im Juni und Juli 2025 haben wir qualitative Probleminterviews mit Arztpraxen durchgeführt. Wir haben Ärzte und deren Personal zu _Problemen_ bei der Online-Terminbuchung befragt. Die Ergebnisse fließen in die Konzeption und Gestaltung von OpenReception ein.
+Im Dezember 2025 und Januar 2026 haben wir qualitative Lösungsinterviews mit Arztpraxen durchgeführt. Wir haben unseren Prototyp Ärztinnen und Ärzten gezeigt und sie befragt, wie gut unsere _Lösung_ zu ihrem Praxisalltag passt.
 
-**Jetzt suchen wir Arztpraxen, die unsere Lösung in einem Interview evaluieren möchten.**
+> Obwohl wir ein Online-Terminbuchungssystem am Beispiel von Arztpraxen entwickeln, ist unser Ziel, ein universell einsetzbares Werkzeug zu schaffen.
 
-> Obwohl wir ein Online-Terminbuchungssystem am Beispiel von Arztpraxen entwickeln, streben wir ein universell einsetzbares Werkzeug an.
+## Wie wurden die Interviews durchgeführt?
 
-## Was habe ich davon?
+Wir haben strukturierte Interviews mit interessierten Praxen durchgeführt. In etwa 30-minütigen Gesprächen haben wir unsen Prototypen vorgestellt und um Feedback gebeten, wie Ärztinnen und Ärzte unsere Lösung in ihren Praxisalltag integrieren könnten.
 
-Wenn Sie derzeit andere Anbieter nutzen und dort Ihre gesamte Patientenbasis (möglicherweise automatisch) hochladen, bewegen Sie sich in einer rechtlichen Grauzone.
+## Einige interessante demografische Anmerkungen
 
-Sie nutzen Auftragsverarbeitung. Diese Dienstleister werden diese Daten jedoch möglicherweise nicht ausschließlich für Ihre Zwecke verarbeiten. Zudem haben Ihre Patienten dieser Praxis möglicherweise nicht zugestimmt.
+Wir haben einige demografische Daten erhoben:
 
-Wenn Sie zukünftig OpenReception nutzen, müssen Sie **weniger Unterschriften einholen** und haben die volle Kontrolle über Ihre Patientendaten.
+- Fast alle nutzen Windows (wenig überraschend)
+- Die meisten hatten mehr als etwa 100 Termine pro Woche
+- Einige hatten hohe dreistellige Terminzahlen pro Woche (diese hatten in der Regel auch mehrere Ärztinnen bzw. Ärzte)
+- Manche bieten bis zu 30 verschiedene Terminarten an
 
-Außerdem **wird OpenReception deutlich günstiger als andere Anbieter sein**.
+## Erkenntnisse
 
-Praxen, die an der Entwicklung teilnehmen:
+Dies ist die Liste der wichtigsten Erkenntnisse aus unseren Lösungsinterviews:
 
-- können **das Ergebnis mitgestalten**,
-- erhalten **als Erste die Software**,
-- erhalten einen **exklusiven Rabatt für die Buchung einer Terminbuchungsplattform**,
-- werden auf Wunsch **auf der Website** in unserem Bericht erwähnt (inklusive Link, falls gewünscht).
+- Ärzte möchten wissen, warum ein Patient kommt, bevor dieser erscheint. Manchmal sogar bevor Patienten einen Termin erhalten.
+- Ärzte müssen Fehlbuchungen verhindern (Patienten, die diesen speziellen Termin nicht benötigen).
+- Ärzte befürchten Spam-Termine, die ihren Kalender für tatsächlich behandlungsbedürftige Patienten blockieren.
+- Ärzte wollen Kontrolle über ihren Zeitplan und die gebuchten Termine behalten.
+- Nicht nur Ärzte müssen verfügbar sein. Auch medizinisches Personal, Räume und Geräte müssen für einen Termin zur Verfügung stehen.
+- Wenn Patienten ihren Termin absagen, können sie aus dem regelmäßigen Vorsorge-Rhythmus fallen. Ärzte möchten darüber informiert werden, damit sie ihre Patienten nicht aus den Augen verlieren.
+- Ärzte entscheiden gemeinsam mit ihrem Praxisteam, welche Werkzeuge eingesetzt werden.
 
-## Was erwartet mich?
+## Teilnehmende Praxen
 
-In einem etwa 30-minütigen Gespräch besprechen wir:
+Vielen Dank an alle Ärztinnen und Ärzte, die an dieser Interviewreihe teilgenommen haben! Rund zwei Dutzend Ärztinnen und Ärzte haben teilgenommen und uns wertvolles Feedback zu unserer aktuellen Umsetzung gegeben.
 
-- Arbeitsabläufe in OpenReception und wie diese in Ihre Praxis passen,
-- Testen auf Usability-Probleme und
-- Diskussion über Probleme und Hindernisse bei der Implementierung von OpenReception in Ihrer Praxis
+Wir haben Allgemeinmediziner, Zahnärzte, Augenärzte, Radiologen, Schlafmediziner, Nuklearmediziner und Psychotherapeuten interviewt. Einige der Ärztinnen und Ärzte haben uns erlaubt, ihnen öffentlich zu danken, diese waren:
 
-Wir führen dieses Gespräch per Videokonferenz.
-
-## Wie kann ich teilnehmen?
-
-Schreiben Sie uns persönlich über den Kanal, über den wir Sie kontaktiert haben, oder melden Sie sich per E-Mail unter _team[at]open-reception.org_.
+- Alexander Bosch
+- [Familienmedizin Dr. Marc Hanefeld](https://praxis-hanefeld.com)
+- [Gammamed Nuklearmedizin in Magdeburg](https://gammamed-pawlow.de)
+- [Narcosens Anästhesie](https://narcosens.com)
+- [Praxis Miriam Thelocka](https://praxis-thelocka.de)
+- [Radiologie Pawlow in Magdeburg](https://radiologie-pawlow.de)
+- [Schlafmedizin Ralf Warmuth](https://www.schlafdoktor.de)
+- [Zahnarztpraxis Björn Schaper](https://www.zahnarzt-schaper.de)
+- [Zahnklinik am Hedwig](https://dens.info)
