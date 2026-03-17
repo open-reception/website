@@ -1,0 +1,24 @@
+---
+title: Client Side Overview
+description: This section shows how clients can work with your OpenReception appointment booking page
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+
+This section shows how clients can work with your OpenReception appointment booking page
+
+<CardGrid>
+  <LinkCard
+    title="Book an appointment"
+    href="./book-appointment"
+    description="Book or request an appointment"
+  />
+  <LinkCard
+    title="Client Dashboard"
+    href="./client-dashboard"
+    description="Login and review or cancel appointments"
+  />
+</CardGrid>

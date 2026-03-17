@@ -1,6 +1,9 @@
 ---
 title: Problem Analysis
 description: The Results of Our Problem Analysis
+lastUpdated: 2025-07-20
+sidebar:
+  order: 2
 ---
 
 In June and July 2025, we conducted qualitative interviews with medical practices. We interviewed doctors and their staff about _problems_ with online appointment booking. The results will be incorporated into the conception and design of OpenReception.

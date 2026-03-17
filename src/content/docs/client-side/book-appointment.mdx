@@ -1,0 +1,63 @@
+---
+title: Book Appointment
+description: This step-by-step guide shows you how book an appointment in OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 2
+---
+
+import {Steps} from "@astrojs/starlight/components";
+
+This step-by-step guide shows you how book an appointment in OpenReception.
+
+:::note
+Some appointment types may not be booked directly. Those have to be requested first. A staff member will later [confirm](/calendar/confirm-appointment) or [deny](/calendar/deny-appointment) your request.
+:::
+
+<Steps>
+
+1.  Navigate to the organizations appointment booking page and click on _Book Appointment_.
+
+    ![Organization Home Page](./assets/book-appointment/1-home.png)
+
+1.  Select the appointment type you want (internally we call them channels).
+
+    ![Select channel](./assets/book-appointment/2-select-channel.png)
+
+1.  Select the person you want your appointment with. This step is skipped, if only one person is available for this appointment type.
+
+    ![Select agent](./assets/book-appointment/3-select-agent.png)
+
+1.  Select an available **date** and **time** for your appointment.
+
+    ![Select date and time](./assets/book-appointment/4-select-date-and-time.png)
+
+1.  Add your personal data.
+    - Add your **name**.
+    - Add your **e-mail address**.
+    - Check the checkbox below the e-mail address field to be **notified about changes**. If you don't check this you need to come back and [login](/client-side/client-dashboard) to manually check for changes.
+    - Add your **phone number**. The organization may require you to add your phone number here.
+    - Click _Add personal data_ to proceed.
+
+    ![Add personal data](./assets/book-appointment/5-add-personal-data.png)
+
+1.  If you've booked an appointment here before select the tab _Login_ at the top.
+
+    ![Enter PIN form](./assets/book-appointment/6-login-or-register.png)
+
+1.  Enter your PIN and click _Show summary_
+
+1.  If you've logged-in and your e-mail and PIN are correct, you will see a _Login successful_ notification.
+
+    ![Login successful](./assets/book-appointment/7-review-appointment.png)
+
+1.  Check the appointment details. Click _Book appointment_ or _Request appointment_.
+
+1.  Your appointment is now booked/requested.
+
+    ![Appointment booked](./assets/book-appointment/8-appointment-booked.png)
+    ![Appointment requested](./assets/book-appointment/8b-appointment-requested.png)
+
+</Steps>
+
+You can now login to see the current state of your appointment.

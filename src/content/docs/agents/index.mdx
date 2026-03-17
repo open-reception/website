@@ -1,0 +1,58 @@
+---
+title: Agents & Absences Overview
+description: Agents are people/ groups/ teams that take your appointments. You can also add Absences for agents, for when they are not available.
+lastUpdated: 2026-03-01
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+
+**Agents** are the people/ groups/ teams that take your appointments. If you assign more agents to a channel, clients can choose which one to meet with.
+
+:::note
+Agents are not necessarily the same people who are accessing your appointments. Only [Staff Members](../staff) can access appointments.
+:::
+
+<CardGrid>
+  <LinkCard
+    title="Add Agent"
+    href="./add-agent"
+    description="Add a new agent to your instance"
+  />
+  <LinkCard
+    title="Edit Agent"
+    href="./edit-agent"
+    description="Changing an agents details"
+  />
+  <LinkCard
+    title="Delete Agent"
+    href="./delete-agent"
+    description="Removing an agent"
+  />
+</CardGrid>
+
+You can also add **Absences** for agents, to make sure nobody can book appointments with them, when they are not available.
+
+:::note
+Only future absences are shown and absences in the past are automatically removed.
+:::
+
+<CardGrid>
+  <LinkCard
+    title="Add Absence"
+    href="./add-absence"
+    description="Add a new absence for an agent"
+  />
+  <LinkCard
+    title="Edit Absence"
+    href="./edit-absence"
+    description="Changing an agents absence"
+  />
+  <LinkCard
+    title="Delete Absence"
+    href="./delete-absence"
+    description="Removing an absence"
+  />
+</CardGrid>

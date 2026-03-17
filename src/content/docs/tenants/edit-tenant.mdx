@@ -1,0 +1,31 @@
+---
+title: Edit Tenant
+description: A guide on how to edit Tenant Admin Settings in OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 5
+---
+
+import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
+
+<Badge text="Management Feature" />
+Editing a tenant is very limited as of now.
+
+<Steps>
+
+1. Navigate to the tenant section of the dashboard, search for the tenant you want to edit and open the context menu for it. Click on _Edit_.
+
+   ![Tenant list with open context menu](./assets/edit-tenant/1-tenant-context-menu.png)
+
+1. A modal with a form opens.
+   - Edit the **domain**. The new domain should already point to the IP or CNAME of this instance. If this is not the case, the appointment website for this tenant will be unavailable.
+   - Click _Edit Tenant_ when you are finished.
+
+   ![Edit tenant form](./assets/edit-tenant/2-edit-tenant-form.png)
+
+1. The tenant will be updated.
+
+   ![Add tenant form](./assets/edit-tenant/3-tenant-edited.png)
+
+</Steps>

@@ -1,0 +1,37 @@
+---
+title: Deny Appointment
+description: This step-by-step guide shows you how to deny an appointment request in OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 4
+---
+
+import {Steps} from "@astrojs/starlight/components";
+
+If you've set a [channel to require confirmation](/channels#require-confirmation) before appointments are accepted, you have to [confirm](/calendar/confirm-appointment) or deny them.
+
+<Steps>
+
+1.  Navigate to the calendar section of the dashboard, go to the appointment you wish to deny and click on it.
+
+    ![Calendar with appointments](./assets/calendar-deny-appointment/1-calendar-with-requested-appointment.png)
+
+1.  A modal with the appointment details opens. Click _Deny Appointment_
+
+    ![Appointment details with deny button](./assets/calendar-deny-appointment/2-appointment-details-with-deny-button.png)
+
+1.  A confirm dialog opens.
+
+    ```
+    Are you sure you want to deny this appointment?
+    ```
+
+    Click _Ok_ to proceed.
+
+1.  The appointment is now denied and removed. If the client had e-mail notifications enabled, they wil be notified.
+
+    ![Appointment denied](./assets/calendar-deny-appointment/3-appointment-denied.png)
+
+    Every staff member in the channel will be notified.
+
+</Steps>

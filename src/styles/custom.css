@@ -13,4 +13,9 @@
     a {
         text-decoration: underline;
     }
+
+    .sl-markdown-content img {
+        border: 1px solid var(--sl-color-gray-4);
+        border-radius: 4px;
+    }
 }

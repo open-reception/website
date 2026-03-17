@@ -1,6 +1,9 @@
 ---
 title: Solution Interviews
 description: Solution Interview Results for our prototype
+lastUpdated: 2025-10-27
+sidebar:
+  order: 3
 ---
 
 In December 2025 and January 2026 we conducted qualitative solution interviews with medical practices. We showed our prototype to doctors and interviewed them about how fitting our _solution_ is for them.

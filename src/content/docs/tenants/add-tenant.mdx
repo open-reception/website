@@ -1,0 +1,36 @@
+---
+title: Add Tenant
+description: A guide on how to add a Tenant in OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 2
+---
+
+import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
+
+<Badge text="Management Feature" />
+Add a new tenant, if you want to allow a new organization/ person to collect
+appointments.
+
+<Steps>
+
+1. Navigate to the tenant section of the dashboard and click on _Add Tenant_
+
+   ![Empty tenant list](./assets/add-tenant/1-empty-tenant-list.png)
+
+1. A modal with a form opens.
+   - Add a unique internal **name** for the tenant
+   - Add a **domain**. This domain should already point to the IP or CNAME of this instance.
+   - You can also add an **E-Mail Address** for a person that will be added with the [tenant admin role](../staff#roles).
+   - Click _Add Tenant_ when you are finished.
+
+   ![Add tenant form](./assets/add-tenant/2-add-tenant-form.png)
+
+1. The tenant will be created and shown in the list of tenants.
+
+   ![Add tenant form](./assets/add-tenant/3-added-tenant.png)
+
+</Steps>
+
+Proceed with selecting the tenant, to start setting it up.

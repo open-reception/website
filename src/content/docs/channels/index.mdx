@@ -1,0 +1,54 @@
+---
+title: Channels (Overview)
+description: Channels are a way to collect different types of appointments.
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+
+**Channels** are a way to collect different types of appointments. You can assign multiple [agents](../agents) to one channel and each agent can be assigned to multiple channels.
+
+<CardGrid>
+  <LinkCard
+    title="Add Channel"
+    href="./add-channel"
+    description="Add a new channel to your instance"
+  />
+  <LinkCard
+    title="Edit Channel"
+    href="./edit-channel"
+    description="Changing an channels details"
+  />
+  <LinkCard
+    title="Pause Channel"
+    href="./pause-channel"
+    description="Stop taking new appointments for a channel"
+  />
+  <LinkCard
+    title="Delete Channel"
+    href="./delete-channel"
+    description="Removing an channel"
+  />
+</CardGrid>
+
+## Require Confirmation
+
+You have full control over your calendar. This is why you can require clients to request a confirmation to make an appointment.
+
+Therefore just check the option to **require confirmation** in the channel settings. When enabled, clients will be informed that their apppointment is just a request.
+
+Once the request is added, staff members that are linked to the channel will be [notified using the notification system](../staff/notifications).
+
+The notification will lead you to the appointment, where you can [confirm](../calendar/confirm-appointment) or [deny](../calendar/deny-appointment) it.
+
+## Slot Templates
+
+Channels use slot templates that automatically create available slots based on your settings. If you want one of your agents/ all you agents to be unavailable in a given timespan, you just have to [add an absence](../agents/add-absence) for them.
+
+You can add as many schedule templates as you like. Each template consists of
+
+- the weekdays you offer this appointment for (Monday, Tuesday, ...)
+- the hours and minutes this template starts and ends (08:00 AM, 08:15 AM, ...)
+- the duration of the slots within this template

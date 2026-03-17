@@ -1,0 +1,51 @@
+---
+title: Getting Started
+description: How to start using OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 1
+---
+
+import {Badge} from "@astrojs/starlight/components";
+
+You can use OpenReception by [hosting it yourself](#self-hosted) or using the [managed service](#managed-hosting), which also supports the future availability of OpenReception.
+
+## Self-Hosted
+
+The community version of OpenReception can be self-hosted. We've added a <a href="https://github.com/open-reception/appointment-booking-software/blob/main/docs/deployment.md" target="_blank">guide with recommendations on deployment</a> in our public respository.
+
+## Managed Hosting
+
+[Managed Hosting for OpenReception appointment booking](https://open-reception.com) comes with the following benefits:
+
+- You focus on your actual tasks while we are taking care of the stability and security of your calendar server.
+- You are supporting the ongoing development of OpenReception. Although it's OpenSource it still needs people with the time to work on it to keep it a thing.
+- Expert Personal Support via E-Mail and Phone available.
+- Later: Premium Features are available in Premium plans.
+- Management Features are available for larger organizations.
+
+More information and prices are available on [open-reception.com](https://open-reception.com).
+
+## Premium & Management Features
+
+OpenReception is a free OpenSource software. As of now you can use all of the features in the self-hosted version.
+
+In the future there will be **Premium-Features** that are only available on Managed Hosting from [open-reception.com](https://open-reception.com).
+
+**Management Features** are only available if you are Self-Hosting or are on our medical care unit plans from [open-reception.com](https://open-reception.com).
+
+Throughout this documentation we will be labeling <Badge text="Premium Features" variant="danger" /> and <Badge text="Management Features" />, so you know how you can get access to them.
+
+## Passkeys
+
+OpenReception requires you to use PRT Passkeys. You can implement them using Software or Hardware Passkeys.
+
+:::caution
+Only Passkeys with Primary Refresh Tokens (PRT) are compatible with OpenReception.
+:::
+
+The following list of Passkeys was successfully tested:
+
+- Apple Keychain (Software)
+- Yubico Yubikey 5C (USB C)
+- Yubico Yubikey 5 (USB A)
