@@ -1,6 +1,9 @@
 ---
 title: Problemanalyse
 description: Die Ergebnisse unserer Problemanalyse
+lastUpdated: 2025-07-20
+sidebar:
+  order: 2
 ---
 
 Wir haben im Juni und Juli 2025 qualitative Interviews mit Arztpraxen geführt. Dabei haben wir Ärzte und deren Personal zu _Problemen_ bei der Buchung von Online-Terminen befragt. Die Ergebnisse fließen in die Konzeption und Gestaltung von OpenReception ein.

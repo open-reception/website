@@ -1,0 +1,54 @@
+---
+title: Kanäle Übersicht
+description: Kanäle sind eine Möglichkeit, verschiedene Arten von Terminen zu sammeln.
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+
+**Kanäle** sind eine Möglichkeit, verschiedene Arten von Terminen zu sammeln. Du kannst mehrere [Akteure:innen](../agents) einem Kanal zuweisen und jede Akteur:in kann mehreren Kanälen zugewiesen werden.
+
+<CardGrid>
+  <LinkCard
+    title="Kanal hinzufügen"
+    href="./add-channel"
+    description="Füge einen neuen Kanal zu Deiner Instanz hinzu"
+  />
+  <LinkCard
+    title="Kanal bearbeiten"
+    href="./edit-channel"
+    description="Details eines Kanals ändern"
+  />
+  <LinkCard
+    title="Kanal pausieren"
+    href="./deactivate-channel"
+    description="Keine neuen Termine für einen Kanal annehmen"
+  />
+  <LinkCard
+    title="Kanal löschen"
+    href="./delete-channel"
+    description="Entferne einen Kanal"
+  />
+</CardGrid>
+
+## Bestätigung erforderlich
+
+Du hast volle Kontrolle über Deinen Kalender. Deshalb kannst Du verlangen, dass Klient:innen einen Termin anfragen müssen und Du ihn bestätigst.
+
+Wähle dazu einfach die Option **Bestätigung erforderlich** in den Kanaleinstellungen an. Wenn diese Option aktiviert ist, werden Klient:innen darauf hingewiesen, dass ihr Termin nur eine Anfrage ist.
+
+Sobald die Anfrage hinzugefügt wird, werden die Mitarbeiter:innen, die mit dem Kanal verbunden sind, [über das Benachrichtigungssystem benachrichtigt](../staff/notifications).
+
+Die Benachrichtigung führt Dich zum Termin, wo Du ihn [bestätigen](../calendar/confirm-appointment) oder [ablehnen](../calendar/deny-appointment) kannst.
+
+## Zeitvorlagen
+
+Kanäle verwenden Zeitvorlagen, die automatisch verfügbare Zeitfenster basierend auf Deinen Einstellungen erstellen. Wenn Du möchtest, dass eine oder alle Deine Akteure:innen in einem bestimmten Zeitraum nicht verfügbar sind, musst Du einfach eine [Abwesenheit für sie hinzufügen](../agents/add-absence).
+
+Du kannst so viele Zeitvorlagen hinzufügen wie Du möchtest. Jede Vorlage besteht aus
+
+- den Wochentagen, für die du diesen Termin anbietest (Montag, Dienstag, ...)
+- Stunden und Minuten, wann die Vorlage beginnt und endet (08:00 Uhr, 08:15 Uhr, ...)
+- der Dauer der Zeitfenster in dieser Vorlage

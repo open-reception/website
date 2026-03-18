@@ -1,0 +1,58 @@
+---
+title: Akteure & Abwesenheiten Übersicht
+description: Akteure sind Personen/Gruppen/Teams, die Deine Termine entgegennehmen. Du kannst auch Abwesenheiten für Akteure hinzufügen, wenn sie nicht verfügbar sind.
+lastUpdated: 2026-03-01
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+
+**Akteure** sind die Personen/Gruppen/Teams, die Deine Termine entgegennehmen. Wenn Du mehrere Akteure einem Kanal zuweist, können Klienten:innen wählen, mit welcher Akteur:in sie einen Termin vereinbaren möchten.
+
+:::note
+Akteure sind nicht unbedingt dieselben Personen, die auf Deine Termine zugreifen. Nur [Mitarbeiter:innen](/de/staff) können auf Termine zugreifen.
+:::
+
+<CardGrid>
+  <LinkCard
+    title="Akteur:in hinzufügen"
+    href="./add-agent"
+    description="Füge einen neuen Akteur zu Deiner Instanz hinzu"
+  />
+  <LinkCard
+    title="Akteur:in bearbeiten"
+    href="./edit-agent"
+    description="Akteur-Details ändern"
+  />
+  <LinkCard
+    title="Akteur:in löschen"
+    href="./delete-agent"
+    description="Entferne einen Akteur"
+  />
+</CardGrid>
+
+Du kannst auch **Abwesenheiten** für Akteure hinzufügen, um sicherzustellen, dass niemand mit ihnen einen Termin vereinbart, wenn sie nicht verfügbar sind.
+
+:::note
+Nur zukünftige Abwesenheiten werden angezeigt und Abwesenheiten in der Vergangenheit werden automatisch entfernt.
+:::
+
+<CardGrid>
+  <LinkCard
+    title="Abwesenheit hinzufügen"
+    href="./add-absence"
+    description="Füge eine neue Abwesenheit für einen Akteur hinzu"
+  />
+  <LinkCard
+    title="Abwesenheit bearbeiten"
+    href="./edit-absence"
+    description="Akteur-Abwesenheit ändern"
+  />
+  <LinkCard
+    title="Abwesenheit löschen"
+    href="./delete-absence"
+    description="Entferne eine Abwesenheit"
+  />
+</CardGrid>

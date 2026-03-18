@@ -1,0 +1,55 @@
+---
+title: Mitarbeiter:innen & Benachrichtigungen Übersicht
+description: Beschreibung folgt
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+
+**Mitarbeiter:innen** sind Konten mit Zugriff auf das Dashboard. Sie haben zugewiesene [Rollen](#rollen), die Berechtigungen für Benutzer:innen implizieren.
+
+<CardGrid>
+  <LinkCard
+    title="Mitarbeiter:in hinzufügen"
+    href="./add-staff-member"
+    description="Füge eine neue:n Mitarbeiter:in zu Deiner Instanz hinzu"
+  />
+  <LinkCard
+    title="Mitarbeiter:in bearbeiten"
+    href="./edit-staff-member"
+    description="Bearbeite die Details einer:s Mitarbeiters:in"
+  />
+  <LinkCard
+    title="Zugriff für Mitarbeiter:in gewähren"
+    href="./grant-access-to-staff-member"
+    description="Ermögliche einer:m Mitarbeiter:in, Termine zu entschlüsseln"
+  />
+  <LinkCard
+    title="Mitarbeiter:in löschen"
+    href="./delete-staff-member"
+    description="Entferne eine:n Mitarbeiter:in"
+  />
+</CardGrid>
+
+Diese Mitarbeiter:innen können Kanälen zugeordnet werden, was **Benachrichtigungen** ermöglicht.
+
+<CardGrid>
+  <LinkCard title="Benachrichtigungen" href="./notifications" />
+</CardGrid>
+
+## Rollen
+
+OpenReception kennt bisher nur wenige Rollen. Global Admins sind für die technische Verwaltung, Mandanten-Admins für die Selbstverwaltung innerhalb eines Mandanten und Mitarbeiter:innen für die tägliche Arbeit mit Terminen und Verfügbarkeiten zuständig. Hier ist eine Übersicht, was die einzelnen Rollen tun können:
+
+| Rolle / Berechtigung              | Global Admin | Mandanten Admin | Mitarbeiter:in |
+| --------------------------------- | ------------ | --------------- | -------------- |
+| Mandanten verwalten               | ✔︎            |                 |                |
+| Mandanten-Einstellungen verwalten | ✔︎            | ✔︎               |                |
+| Akteure:innen verwalten           | ✔︎            | ✔︎               |                |
+| Abwesenheiten verwalten           | ✔︎            | ✔︎               | ✔︎              |
+| Kanäle verwalten                  | ✔︎            | ✔︎               |                |
+| Mitarbeiter:innen verwalten       | ✔︎            | ✔︎               |                |
+| Zugriff auf Termine gewähren      |              | ✔︎               | ✔︎              |
+| Termine entschlüsseln             |              | ✔︎               | ✔︎              |

@@ -1,0 +1,35 @@
+---
+title: Termin ablehnen
+description: Diese Schritt-für-Schritt-Anleitung zeigt Dir, wie Du eine Terminanfrage in OpenReception ablehnst
+lastUpdated: 2026-03-01
+sidebar:
+  order: 4
+---
+
+import {Steps} from "@astrojs/starlight/components";
+
+Wenn Du einen [Kanal so eingerichtet hast, dass eine Bestätigung erforderlich ist](/de/channels#bestätigung-erforderlich), bevor Termine angenommen werden, musst Du sie [bestätigen](/de/calendar/confirm-appointment) oder ablehnen.
+
+<Steps>
+
+1.  Navigiere zum Kalenderabschnitt des Dashboards, gehe zu dem Termin, den Du ablehnen möchtest, und klicke darauf.
+
+    ![Kalender mit Terminen](./assets/calendar-deny-appointment/1-calendar-with-requested-appointment.png)
+
+1.  Ein Modal mit den Termindetails wird geöffnet. Klicke auf _Termin ablehnen_
+
+    ![Termindetails mit Ablehnungs-Schaltfläche](./assets/calendar-deny-appointment/2-appointment-details-with-deny-button.png)
+
+1.  Ein Bestätigungsdialog wird geöffnet.
+
+    ```
+    Sind Sie sicher, dass Sie diesen Termin absagen möchten?
+    ```
+
+    Klicke auf _Ok_, um fortzufahren.
+
+1.  Der Termin wird nun abgelehnt und entfernt. Wenn die Klient:in E-Mail-Benachrichtigungen aktiviert hatte, wird eine Benachrichtigung versendet.
+
+    ![Termin abgelehnt](./assets/calendar-deny-appointment/3-appointment-denied.png)
+
+</Steps>

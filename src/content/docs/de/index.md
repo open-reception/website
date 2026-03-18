@@ -11,7 +11,7 @@ hero:
     alt: Logo - Kalender und Schloss in Einem
     file: ../../../assets/open-reception-logo.svg
   actions:
-    - text: Loslegen
+    - text: Erste Schritte
       link: /de/getting-started
       icon: rocket
       variant: primary

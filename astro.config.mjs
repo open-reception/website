@@ -9,10 +9,6 @@ import starlightHeadingBadges from "starlight-heading-badges";
 // https://astro.build/config
 export default defineConfig({
   site: "https://open-reception.org",
-  i18n: {
-    locales: ["en", "de"],
-    defaultLocale: "en",
-  },
   prefetch: true,
   integrations: [
     starlight({
@@ -22,7 +18,11 @@ export default defineConfig({
         starlightHeadingBadges(),
       ],
       title: "OpenReception",
-      defaultLocale: "en",
+      defaultLocale: "root",
+      locales: {
+        root: {label: "English", lang: "en"},
+        de: {label: "Deutsch", lang: "de"},
+      },
       customCss: ["./src/styles/custom.css"],
       logo: {
         src: "./src/assets/open-reception-logo.svg",

@@ -1,0 +1,51 @@
+---
+title: Erste Schritte
+description: Wie Du mit OpenReception startest
+lastUpdated: 2026-03-01
+sidebar:
+  order: 1
+---
+
+import {Badge} from "@astrojs/starlight/components";
+
+Du kannst OpenReception nutzen, indem Du [es selbst hostest](#selbst-gehostet) oder den [Managed Hosting Service](#managed-hosting) nutzt, der auch die zukünftige Verfügbarkeit von OpenReception unterstützt.
+
+## Selbst gehostet
+
+Die Community-Version von OpenReception kann selbst gehostet werden. Wir haben einen <a href="https://github.com/open-reception/appointment-booking-software/blob/main/docs/deployment.md" target="_blank">Leitfaden mit Empfehlungen zur Bereitstellung</a> (nur Englisch) in unseren öffentlichen Repository hinzugefügt.
+
+## Managed Hosting
+
+[Managed Hosting für OpenReception Terminbuchung](https://open-reception.com) hat die folgenden Vorteile:
+
+- Du konzentrierst Dich auf Deine eigentlichen Aufgaben, während wir uns um die Stabilität und Sicherheit Deines Kalenders kümmern.
+- Du unterstützt die laufende Entwicklung von OpenReception. Obwohl es OpenSource ist, braucht es immer noch Menschen, die Zeit investieren, damit es erhalten werden kann.
+- Professioneller persönlicher Support per E-Mail und Telefon verfügbar.
+- Später: Premium-Funktionen sind in Premium-Plänen verfügbar.
+- Management-Funktionen sind für größere Organisationen verfügbar.
+
+Weitere Informationen und Preise findest Du auf [open-reception.com](https://open-reception.com).
+
+## Premium- & Management-Funktionen
+
+OpenReception ist kostenlose OpenSource-Software. Im Moment kannst Du alle Funktionen in der selbst gehosteten Version nutzen.
+
+In Zukunft wird es **Premium-Funktionen** geben, die nur innerhalb des Managed Hostings von [open-reception.com](https://open-reception.com) verfügbar sind.
+
+**Management-Funktionen** sind nur verfügbar, wenn Du selbst hostest oder einen unserer MVZ-Pläne von [open-reception.com](https://open-reception.com) nutzt.
+
+In dieser Dokumentation werden wir <Badge text="Premium-Funktionen" variant="danger" /> und <Badge text="Management-Funktionen" /> kennzeichnen, damit Du weißt, wie Du Zugriff auf sie bekommst.
+
+## Passkeys
+
+OpenReception erfordert, dass Du PRT Passkeys verwendest. Du kannst sie mit Software- oder Hardware-Passkeys implementieren.
+
+:::caution
+Nur Passkeys mit Primary Refresh Tokens (PRT) sind mit OpenReception kompatibel.
+:::
+
+Die folgende Liste von Passkeys wurde erfolgreich getestet:
+
+- Apple Keychain (Software)
+- Yubico Yubikey 5C (USB C)
+- Yubico Yubikey 5 (USB A)
