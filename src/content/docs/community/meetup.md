@@ -1,6 +1,9 @@
 ---
 title: Meetup
 description: We are holding a monthly community meetup
+lastUpdated: 2026-03-01
+sidebar:
+  order: 3
 ---
 
 :::note

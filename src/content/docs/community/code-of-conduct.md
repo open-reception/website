@@ -1,6 +1,9 @@
 ---
 title: Code of Conduct
 description: This is the Code of Conduct for OpenReception
+lastUpdated: 2025-12-17
+sidebar:
+  order: 1
 ---
 
 Version 1.0 from December 17, 2025
