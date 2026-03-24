@@ -1,0 +1,34 @@
+---
+title: Kanal hinzufügen
+description: Diese Schritt-für-Schritt-Anleitung zeigt dir, wie du einen Kanal zu OpenReception hinzufügst
+lastUpdated: 2026-03-01
+sidebar:
+  order: 2
+---
+
+import {Steps} from "@astrojs/starlight/components";
+
+:::note
+Vor dem Hinzufügen eines Kanals stelle sicher, dass Du [alle Mandanten-Sprachen konfiguriert hast](../../settings/base-settings).
+:::
+
+<Steps>
+
+1. Navigiere zum Bereich Kanäle im Dashboard und klicke auf _Kanal hinzufügen_
+
+   ![Leere Kanalliste](./assets/add-channel/1-empty-channels-list.png)
+
+1. Ein Modal mit einem Formular öffnet sich.
+   - Füge einen **Namen** und eine **Beschreibung** in allen Deinen Sprachen hinzu
+   - Wähle die **Akteure:innen** aus, die Termine in diesem Kanal durchführen können. Bei automatischer Wahl werden die Akteur:innen in der Reihenfolge der Auswahl gewählt.
+   - Wähle die **Mitarbeiter:innen** aus, die Benachrichtigungen über diesen Kanal erhalten (für Terminanfragen).
+   - Wähle, ob dieser Kanal **öffentlich** sein soll. Wenn er nicht öffentlich ist, kannst nur Du Termine über den [Kalender](/de/calendar) buchen.
+   - Wähle, ob Termine einer **Bestätigung bedürfen**. Du wirst [vom Benachrichtigungssystem benachrichtigt](/de/staff/notifications), wenn eine neue Anfrage hinzugefügt wird.
+   - Füge einen **Zeitplan** für Deine Termine hinzu. Siehe [Zeitvorlagen](../#zeitvorlagen).
+
+   ![Kanal hinzufügen Formular](./assets/add-channel/2-add-channel-form.png)
+
+1. Klicke dann auf _Kanal hinzufügen_ damit er gespeichert wird.
+   ![Kanal hinzugefügt](./assets/add-channel/3-channel-added.png)
+
+</Steps>

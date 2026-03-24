@@ -1,0 +1,43 @@
+---
+title: Mandanten (Übersicht)
+description: Mandanten sind eine Möglichkeit, mehrere Organisationen auf einem einzelnen Server oder einer einzelnen Datenbank zu organisieren.
+lastUpdated: 2026-03-01
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
+
+<Badge text="Management-Feature" />
+Mandanten sind eine Möglichkeit, mehrere Organisationen auf einem einzelnen
+Server oder einer Datenbank zu organisieren.
+
+<CardGrid>
+  <LinkCard
+    title="Mandant hinzufügen"
+    href="/de/tenants/add-tenant"
+    description="Füge einen neuen Mandanten zu Deiner Instanz hinzu"
+  />
+  <LinkCard
+    title="Mandant bearbeiten"
+    href="/de/tenants/edit-tenant"
+    description="Ändere die globale Mandanten-Konfiguration (Domain)"
+  />
+  <LinkCard
+    title="Mandant auswählen"
+    href="/de/tenants/select-tenant"
+    description="Du musst einen Mandanten auswählen, um ihn zu konfigurieren"
+  />
+  <LinkCard
+    title="Onboarding-Hilfe"
+    href="/de/tenants/onboarding-a-tenant"
+    description="Unsere Onboarding-Hilfe auf dem Dashboard hilft Dir, loszulegen"
+  />
+  <LinkCard
+    title="Mandant löschen"
+    href="/de/tenants/delete-tenant"
+    description="Entferne einen Mandanten und alle seine Daten"
+  />
+</CardGrid>

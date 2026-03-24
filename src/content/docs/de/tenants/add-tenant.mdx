@@ -1,0 +1,36 @@
+---
+title: Mandant hinzufügen
+description: Eine Anleitung zum Hinzufügen eines Mandanten in OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 2
+---
+
+import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
+
+<Badge text="Management-Feature" />
+Füge einen neuen Mandanten hinzu, wenn Du einer neuen Organisation/ Person
+ermöglichen möchtest, Termine zu sammeln.
+
+<Steps>
+
+1. Navigiere zum Mandanten-Bereich des Dashboards und klicke auf _Mandant hinzufügen_
+
+   ![Leere Mandantenliste](./assets/add-tenant/1-empty-tenant-list.png)
+
+1. Es öffnet sich ein Modal mit einem Formular.
+   - Füge einen eindeutigen internen **Namen** für den Mandanten hinzu. Kann später nicht geändert werden.
+   - Füge eine **Domain** hinzu. Diese Domain sollte bereits auf die IP oder CNAME dieser Instanz verweisen.
+   - Du kannst auch eine **E-Mail-Adresse** für eine Person hinzufügen, die mit der [Mandanten-Admin-Rolle](../staff#rollen) hinzugefügt wird.
+   - Klicke _Mandant hinzufügen_, wenn Du fertig bist.
+
+   ![Mandanten-Formular hinzufügen](./assets/add-tenant/2-add-tenant-form.png)
+
+1. Der Mandant wird erstellt und in der Liste der Mandanten angezeigt.
+
+   ![Mandanten-Formular hinzufügen](./assets/add-tenant/3-added-tenant.png)
+
+</Steps>
+
+Führe die Auswahl des Mandanten durch, um mit der Einrichtung zu beginnen.

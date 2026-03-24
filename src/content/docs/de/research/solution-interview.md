@@ -1,6 +1,9 @@
 ---
 title: Lösungsinterviews
 description: Ergebnisse der Lösungsinterviews für unseren Prototyp
+lastUpdated: 2025-10-27
+sidebar:
+  order: 3
 ---
 
 Im Dezember 2025 und Januar 2026 haben wir qualitative Lösungsinterviews mit Arztpraxen durchgeführt. Wir haben unseren Prototyp Ärztinnen und Ärzten gezeigt und sie befragt, wie gut unsere _Lösung_ zu ihrem Praxisalltag passt.

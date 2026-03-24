@@ -1,0 +1,42 @@
+---
+title: Zugriff für Mitarbeiter:in gewähren
+description: Diese Schritt-für-Schritt-Anleitung zeigt Dir, wie Du neuen Mitarbeiter:innen Zugriff in OpenReception gewährst
+lastUpdated: 2026-03-01
+sidebar:
+  order: 2
+---
+
+import {Steps} from "@astrojs/starlight/components";
+
+:::note
+Bevor Du einer Mitarbeiter:in Zugriff gewähren kannst, muss diese [ihr Konto einrichten](/de/account/setup-account).
+:::
+
+:::tip
+Nur Mitarbeiter:innen, die bereits vollständigen Zugriff haben, können diesen anderen gewähren.
+:::
+
+<Steps>
+
+1. Navigiere zum Bereich Mitarbeiter:innen im Dashboard und suche die Mitarbeiter:in, der Du Zugriff gewähren möchtest. Es wird ein Badge `KANN TERMINE NICHT SEHEN` angezeigt.
+
+   ![Mitarbeiter:innenliste](./assets/grant-access-to-staff-member/1-staff-member-list.png)
+
+1. Öffne das Kontextmenü für diese Mitarbeiter:in und klicke _Zugriff gewähren_.
+
+   ![Mitarbeiter:innenliste mit Kontextmenü](./assets/grant-access-to-staff-member/2-staff-member-list-with-context-menu.png)
+
+1. Es öffnet sich ein Modal. Bestätige durch Klicken auf _Zugriff gewähren_.
+   ![Zugriff für Mitarbeiter:in-Formular gewähren](./assets/grant-access-to-staff-member/3-grant-access-modal.png)
+
+1. Wenn erfolgreich, schließt sich das Modal, Du siehst eine Erfolgsmitteilung und das Badge `KANN TERMINE NICHT SEHEN` verschwindet.
+
+   ![Zugriff gewährt](./assets/grant-access-to-staff-member/4-access-granted.png)
+
+   Wenn dieser Prozess fehlschlägt, wird Dir eine Fehlermeldung angezeigt. Du kannst es jederzeit wiederholen. Möglicherweise wird Dir dieser Fehler angezeigt, wenn die Mitarbeiter:in ihr Konto nicht eingerichtet hat.
+
+   ![Fehler bei der Zugriffserteilung](./assets/grant-access-to-staff-member/4a-granting-access-failed.png)
+
+   Wenn dies weiterhin geschieht, kannst Du evtl. [den Support kontaktieren](https://open-reception.com/de/support).
+
+</Steps>

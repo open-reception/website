@@ -1,0 +1,34 @@
+---
+title: Add Channel
+description: This step-by-step guide shows you how to add a channel to OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 2
+---
+
+import {Steps} from "@astrojs/starlight/components";
+
+:::note
+Before you add a channel, make sure you've [set up all the tenant languages](../../settings/base-settings).
+:::
+
+<Steps>
+
+1. Navigate to the channels section of the dashboard and click on _Add Channel_
+
+   ![Empty channels list](./assets/add-channel/1-empty-channels-list.png)
+
+1. A modal with a form opens.
+   - Add a **name** and **description** in all your languages
+   - Select the **agents** that can conduct appointments in this channel. When auto-secting agents they will be selected in the order you've set in this list.
+   - Select the **staff members** that will get notifications about this channel (for appointment requests).
+   - Select if this channel should be **public**. If It's not public, only you can book an appointment using the [calendar](../calendar)
+   - Select if appointments **require confirmation**. You will be [notified by the notification system](../staff/notifications) if a new request is added.
+   - Add a **schedule** for you appointments. See [slot templates](../#slot-templates).
+
+   ![Add channel form](./assets/add-channel/2-add-channel-form.png)
+
+1. Then click _Add Channel_ and it will be saved.
+   ![Channel added](./assets/add-channel/3-channel-added.png)
+
+</Steps>

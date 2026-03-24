@@ -1,0 +1,42 @@
+---
+title: Grant Access to Staff Member
+description: This step-by-step guide shows you how to grant access to new staff members in OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 2
+---
+
+import {Steps} from "@astrojs/starlight/components";
+
+:::note
+Before you can grant access to a staff member they must have [setup their account](/account/setup-account).
+:::
+
+:::tip
+Only staff members that already have full access, can grant their access to others.
+:::
+
+<Steps>
+
+1. Navigate to the staff member section of the dashboard, search for the member you want to grant access to. It will show a badge `CAN'T SEE APPOINTMENTS`.
+
+   ![Staff member list](./assets/grant-access-to-staff-member/1-staff-member-list.png)
+
+1. Open the context menu for this staff member and click _Grant access_.
+
+   ![Staff member list with context menu](./assets/grant-access-to-staff-member/2-staff-member-list-with-context-menu.png)
+
+1. A modal opens. Confirm by clicking _Grant Access_.
+   ![Grant access to staff member form](./assets/grant-access-to-staff-member/3-grant-access-modal.png)
+
+1. When successful the modal closes, you will see a success notification and the `CAN'T SEE APPOINTMENTS` badge will disappear.
+
+   ![Access granted](./assets/grant-access-to-staff-member/4-access-granted.png)
+
+   If this process fails, you will be shown an error message. You can retry anytime. You may see this error, if the staff member has not set up their account.
+
+   ![Error granting access](./assets/grant-access-to-staff-member/4a-granting-access-failed.png)
+
+   If this keeps happening, you may [contact support](https://open-reception.com/de/support).
+
+</Steps>

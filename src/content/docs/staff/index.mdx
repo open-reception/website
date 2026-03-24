@@ -1,0 +1,55 @@
+---
+title: Staff Members & Notifications Overview
+description: Staff Members are accounts that have access to the dashboard.
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+
+**Staff Members** are accounts that have access to the dashboard. They have assigned [roles](#roles), which imply permissions for users.
+
+<CardGrid>
+  <LinkCard
+    title="Add Staff Member"
+    href="./add-staff-member"
+    description="Add a new staff member to your instance"
+  />
+  <LinkCard
+    title="Edit Staff Member"
+    href="./edit-staff-member"
+    description="Changing a staff members details"
+  />
+  <LinkCard
+    title="Grant Access to Staff Member"
+    href="./grant-access-to-staff-member"
+    description="Enable a staff member to decrypt appointments"
+  />
+  <LinkCard
+    title="Delete Staff Member"
+    href="./delete-staff-member"
+    description="Removing a staff member"
+  />
+</CardGrid>
+
+These Staff Members can be subscribed to channels, which will enable **notifications**.
+
+<CardGrid>
+  <LinkCard title="Notifications" href="./notifications" />
+</CardGrid>
+
+## Roles
+
+OpenReception only knows a few roles so far. Global Admins are for technical administration, Tenant Admins for self-administration within a tenant and Appointment Managers for everyday work with appointments and availabilities. This is an overview of what they can do:
+
+| Role/ Permission             | Global Admin | Tenant Admin | Appointment Manager |
+| ---------------------------- | ------------ | ------------ | ------------------- |
+| Manage Tenants               | ✔︎            |              |                     |
+| Manage Tenant Settings       | ✔︎            | ✔︎            |                     |
+| Manage Agents                | ✔︎            | ✔︎            |                     |
+| Manage Absences              | ✔︎            | ✔︎            | ✔︎                   |
+| Manage Channels              | ✔︎            | ✔︎            |                     |
+| Manage Staff Members         | ✔︎            | ✔︎            |                     |
+| Grant Access to Appointments |              | ✔︎            | ✔︎                   |
+| Decrypt Appointments         |              | ✔︎            | ✔︎                   |

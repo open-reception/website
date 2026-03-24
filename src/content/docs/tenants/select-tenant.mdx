@@ -1,0 +1,29 @@
+---
+title: Select Tenant
+description: Select a Tenant to start configuring it
+lastUpdated: 2026-03-01
+sidebar:
+  order: 3
+---
+
+import {Badge} from "@astrojs/starlight/components";
+import {Steps} from "@astrojs/starlight/components";
+
+<Badge text="Management Feature" />
+Selecting a tenant is your way as a Global Admin to switch between tenants.
+
+<Steps>
+
+1. Navigate to the tenant section of the dashboard, search for the tenant you want to select and open the context menu for it. Click on _Select_.
+
+   ![Empty tenant list](./assets/select-tenant/1-tenant-context-menu.png)
+
+1. Once the selection is complete, you are forwarded to the dashboard for this tenant. In this case it's a fresh tenant, that still needs to be set up. It's an [onboarding guide to help you get this tenant ready](../onboarding-a-tenant).
+
+   ![Dashboard with Onboarding Guide](./assets/select-tenant/2-tenant-selected-dashboard.png)
+
+</Steps>
+
+You can also select tenants from the top left selection, if you have more than one.
+
+![Quick Tenant selection](./assets/select-tenant/3-select-tenant-shortcut.png)

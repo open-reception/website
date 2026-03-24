@@ -1,0 +1,14 @@
+---
+import {getLangFromUrl, useTranslations} from "../i18n/utils";
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
+---
+
+<a
+  class="nova-link-button not-content nova-link-button-primary"
+  style="margin-left: auto; font-size: 0.75rem; padding: 0.25rem .5rem; border-radius: 0.5rem;"
+  href={lang === "de" ? "/de/getting-started" : "/getting-started"}
+>
+  {t("header.getStsarted")}
+</a>

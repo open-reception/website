@@ -11,15 +11,14 @@ hero:
     alt: Logo - Kalender und Schloss in Einem
     file: ../../../assets/open-reception-logo.svg
   actions:
-    - text: Recherche
-      link: /research/problem-analysis
+    - text: Erste Schritte
+      link: /de/getting-started
+      icon: rocket
       variant: primary
-    - text: Auf GitHub ansehen
-      link: https://github.com/open-reception/appointment-booking-software
-      icon: external
+    - text: Recherche
+      link: /de/research
+      icon: document
       variant: secondary
-      attrs:
-        rel: me
 ---
 
 OpenReception wird von [Karl Ludwig Weise](https://ludwigweise.de) und [Hendrik Belitz](https://innovation-through-understanding.de/) entwickelt. Den Prototypen haben wir im Rahmen des [PrototypeFund](https://prototypefund.de/) Jahrgangs eins entwickelt.

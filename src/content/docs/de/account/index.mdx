@@ -1,0 +1,30 @@
+---
+title: Kontoübersicht
+description: Dieser Bereich hilft Dir beim Einrichten und Navigieren des OpenReception-Dashboards.
+lastUpdated: 2026-03-01
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+
+Dieser Bereich hilft Dir beim Einrichten und Navigieren des OpenReception-Dashboards.
+
+<CardGrid>
+  <LinkCard
+    title="Konto einrichten"
+    href="./setup-account"
+    description="Von der Einladungs-E-Mail bis zur Arbeitsfähigkeit"
+  />
+  <LinkCard
+    title="Anmelden"
+    href="./login"
+    description="Anmeldung in Dein Konto, wenn bereits eingerichtet"
+  />
+  <LinkCard
+    title="Tipps zur Benutzeroberfläche"
+    href="./user-interface-tips"
+    description="Kleine Tipps, die Dir unterwegs helfen können"
+  />
+</CardGrid>

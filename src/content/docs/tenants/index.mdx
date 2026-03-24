@@ -1,0 +1,43 @@
+---
+title: Tenants (Overview)
+description: Tenants are a way to organize multiple organization on a single server or database.
+lastUpdated: 2026-03-01
+sidebar:
+  order: 1
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
+
+<Badge text="Management Feature" />
+Tenants are a way to organize multiple organization on a single server or
+database.
+
+<CardGrid>
+  <LinkCard
+    title="Add Tenant"
+    href="/tenants/add-tenant"
+    description="Add a new tenant to your instance"
+  />
+  <LinkCard
+    title="Edit Tenant"
+    href="/tenants/edit-tenant"
+    description="Changing a tenants global configuration (domain)"
+  />
+  <LinkCard
+    title="Select Tenant"
+    href="/tenants/select-tenant"
+    description="You need to select a tenant to start configuring it"
+  />
+  <LinkCard
+    title="Onboarding Help"
+    href="/tenants/onboarding-a-tenant"
+    description="Our onboarding help on the dashboard will help you get started"
+  />
+  <LinkCard
+    title="Delete Tenant"
+    href="/tenants/delete-tenant"
+    description="Remove a tenant and all it's data"
+  />
+</CardGrid>

@@ -1,6 +1,11 @@
 {
+  "header.getStsarted": "Erste Schritte",
   "footer.imprint": "Impressum",
   "footer.privacy": "Datenschutz",
   "footer.press": "Presse",
-  "footer.fundingFrom": "Gefördert von"
+  "footer.fundingFrom": "Gefördert von",
+  "aside.note": "Hinweis",
+  "aside.tip": "Tip",
+  "aside.caution": "Achtung",
+  "aside.danger": "Warnung"
 }

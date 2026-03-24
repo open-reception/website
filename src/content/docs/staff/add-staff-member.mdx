@@ -1,0 +1,48 @@
+---
+title: Add Staff Member
+description: This step-by-step guide shows you how to add a staff member to OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 2
+---
+
+import {Steps} from "@astrojs/starlight/components";
+
+Before you add a staff member, decide on the [role](/staff#roles) this staff member should get.
+
+:::note
+In this section you cannot add Global Admin users.
+:::
+
+<Steps>
+
+1. Navigate to the staff member section of the dashboard and click on _Add Member_
+
+   ![Empty staff member list](./assets/add-staff-member/1-empty-staff-member-list.png)
+
+1. A modal with a form opens.
+   - Add a **name**
+   - Add an **e-mail address**.
+   - Change the **language**, if you want.
+   - Set the **role** for this account.
+
+   ![Add staff member form](./assets/add-staff-member/2-add-staff-member-form.png)
+
+1. Then click _Add Member_ and it will be saved.
+   ![Staff member added](./assets/add-staff-member/3-staff-member-added.png)
+
+1. They will get an e-mail with an expiring confirmation code. They can re-issue an updated one, if they are not quick enough.
+
+</Steps>
+
+## Finalize Staff Member Onboarding
+
+If you already have appointments in your instance, you have to grant this new staff member access to those. Follow this process, to make it work:
+
+<Steps>
+
+1. The [new staff member must setup their account](/account/setup-account).
+
+1. You, or any other fully onboarded staff member, must [grant access](/staff/grant-access-to-staff-member) to them.
+
+</Steps>

@@ -1,0 +1,31 @@
+---
+title: Mandant bearbeiten
+description: Eine Anleitung zum Bearbeiten von Mandanten-Admin-Einstellungen in OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 5
+---
+
+import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
+
+<Badge text="Management-Feature" />
+Die Bearbeitung eines Mandanten ist derzeit sehr begrenzt.
+
+<Steps>
+
+1. Navigiere zum Mandanten-Bereich des Dashboards, suche den Mandanten, den Du bearbeiten möchtest, und öffne das Kontextmenü dafür. Klicke auf _Bearbeiten_.
+
+   ![Mandantenliste mit offenem Kontextmenü](./assets/edit-tenant/1-tenant-context-menu.png)
+
+1. Es öffnet sich ein Modal mit einem Formular.
+   - Bearbeite die **Domain**. Die neue Domain sollte bereits auf die IP oder CNAME dieser Instanz verweisen. Ist dies nicht der Fall, ist die Terminbuchungsseite für diesen Mandanten nicht verfügbar.
+   - Klicke _Name ändern_, wenn Du fertig bist.
+
+   ![Mandanten-Formular bearbeiten](./assets/edit-tenant/2-edit-tenant-form.png)
+
+1. Der Mandant wird aktualisiert.
+
+   ![Mandanten-Formular hinzufügen](./assets/edit-tenant/3-tenant-edited.png)
+
+</Steps>

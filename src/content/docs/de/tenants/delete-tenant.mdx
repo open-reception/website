@@ -1,0 +1,37 @@
+---
+title: Mandant löschen
+description: Eine Anleitung zum Löschen eines Mandanten in OpenReception
+lastUpdated: 2026-03-01
+sidebar:
+  order: 6
+---
+
+import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
+
+<Badge text="Management-Feature" />
+Wenn Du einen Mandanten nicht mehr benötigst, kannst Du ihn löschen.
+
+:::danger
+Das Löschen eines Mandanten wird alle Konfigurationen und Termine entfernen. Dies kann nicht rückgängig gemacht werden.
+:::
+
+:::caution
+Du kannst keinen Mandanten löschen, den Du derzeit ausgewählt hast. Wähle zuerst einen anderen Mandanten.
+:::
+
+<Steps>
+
+1. Navigiere zum Mandanten-Bereich des Dashboards, suche den Mandanten, den Du löschen möchtest, und öffne das Kontextmenü dafür. Klicke auf _Löschen_.
+
+   ![Mandantenliste mit Kontextmenü](./assets/delete-tenant/1-tenant-context-menu.png)
+
+1. Es öffnet sich ein Modal mit einem Formular. Gebe den Namen des Mandanten ein und klicke _Mandant löschen_
+
+   ![Mandanten-Formular bearbeiten](./assets/delete-tenant/2-delete-tenant-form.png)
+
+1. Der Mandant wird gelöscht und aus der Liste entfernt.
+
+   ![Mandanten-Formular hinzufügen](./assets/delete-tenant/3-tenant-deleted.png)
+
+</Steps>
