@@ -11,5 +11,6 @@ Diese Seite enthält Pressemitteilungen und Partner-Informationen über dieses P
 
 ## Aktuelle Mitteilungen
 
+- [2026-05-04 OpenReception Version 1 jetzt live](/press/2026-05-04-open-reception-verison-1-now-live)
 - [2025-10-27 OpenReception beim PrototypeFund DemoDay 2025](/press/2025-10-27-open-reception-at-prototype-fund-demo-day)
 - [2025-06-12 OpenReception - Entwicklung hat begonnen](/press/2025-06-12-open-reception-development-has-started)
