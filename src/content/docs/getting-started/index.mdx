@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 description: How to start using OpenReception
-lastUpdated: 2026-07-08
+lastUpdated: 2026-07-11
 sidebar:
   order: 1
 ---
@@ -38,26 +38,33 @@ Throughout this documentation we will be labeling <Badge text="Premium Features"
 
 ## Passkeys
 
-OpenReception requires you to use Passkeys, which support the Pseudo-Random-Function extension (PRF). You can implement them using Software or Hardware Passkeys. For the best usability use passkeys with biometric authentification.
+**For secure encryption**, OpenReception requires you to use Passkeys, which support the Pseudo-Random-Function extension (PRF). You can implement them using Software or Hardware Passkeys. For the best usability we recommend using passkeys with **biometric authentification**.
 
 :::caution
 Only Passkeys that support the Pseudo-Random-Function extension (PRF) are compatible with OpenReception.
 :::
 
-The following list of Passkeys was successfully tested:
+:::note
+**PRF Passkeys on Windows** are only supported on Windows 11, release 25H2 (build 26200.7840+) or newer. This update was released in February 2026. Older builds of Windows do not support PRF Passkeys.
+:::
 
-| Key                | Type           | Notes                                       |
-| ------------------ | -------------- | ------------------------------------------- |
-| 1Password          | Software       | Great usability, syncs across devices       |
-| Apple Keychain     | Software       | Great usability, syncs across Apple devices |
-| Windows Hello      | Software       | Great usability                             |
-| Yubico Yubikey Bio | Hardware USB C | Great usability                             |
-| Yubico Yubikey 5C  | Hardware USB C | Usability slower than others                |
-| Yubico Yubikey 5   | Hardware USB A | Usability slower than others                |
+| Key                | Supported | Type           | Notes                                                       |
+| ------------------ | --------- | -------------- | ----------------------------------------------------------- |
+| 1Password          | ✅        | Software       | Great usability with biometrics, syncs across devices       |
+| Apple Keychain     | ✅        | Software       | Great usability with biometrics, syncs across Apple devices |
+| Bitwarden          | ❌        | Software       | Does not support PRF                                        |
+| Dashlane           | ❌        | Software       | Does not support PRF                                        |
+| Windows Hello      | ✅        | Software       | Great usability with biometrics                             |
+| Yubico Yubikey Bio | ✅        | Hardware USB-C | Great usability                                             |
+| Yubico Yubikey 5C  | ✅        | Hardware USB-C | Usability slower than others                                |
+| Yubico Yubikey 5   | ✅        | Hardware USB-A | Usability slower than others                                |
 
-### Untested (incompatible up until v2.1.0)
+### Recommendations
 
-- Bitwarden (Software)
-- Dashlane (Software)
+We recommend using a passkey that fits your every-day needs for quickly unlocking OpenReception.
 
-Last tested on July 8, 2026.
+Use one passkey for every staff member/ workstation accessing OpenReception. Each staff member/ workstation will need to register with their own e-mail address.
+
+Additionally we recommend using a hardware passkey for backup access, if you have lost access to your primary passkey. Place it in a safe place, so you can use it in case of emergency. **If you have lost all your passkeys, you will lose access to appointments**.
+
+In the near future you will be able to register multiple passkeys for each staff member.

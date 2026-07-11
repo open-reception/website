@@ -1,7 +1,7 @@
 ---
 title: Erste Schritte
 description: Wie Du mit OpenReception startest
-lastUpdated: 2026-07-08
+lastUpdated: 2026-07-11
 sidebar:
   order: 1
 ---
@@ -38,26 +38,33 @@ In dieser Dokumentation werden wir <Badge text="Premium-Funktionen" variant="dan
 
 ## Passkeys
 
-OpenReception erfordert, dass Du Passkeys verwendest, die die Pseudo-Random-Function Erweiterung (PRF) unterstützen. Du kannst sie mit Software- oder Hardware-Passkeys implementieren. Verwende Passkeys mit biometrischer Authentifizierung, da sie einfach zu bedienen sind.
+**Für eine sichere Verschlüsselung** erfordert OpenReception, dass Du Passkeys verwendest, die die Pseudo-Random-Function Erweiterung (PRF) unterstützen. Du kannst sie mit Software- oder Hardware-Passkeys implementieren. **Verwende Passkeys mit biometrischer Authentifizierung**, da sie einfach zu bedienen sind.
 
 :::caution
 Nur Passkeys die die Pseudo-Random-Function Erweiterung (PRF) unterstützen sind mit OpenReception kompatibel.
 :::
 
-Die folgende Liste von Passkeys wurde erfolgreich getestet:
+:::note
+PRF Passkeys unter Windows werden erst ab Windows 11, Release 25H2 (build 26200.7840+) unterstützt. Das Update wurde im Februar 2026 veröffentlicht. Ältere Builds unterstützen keine PRF Passkeys.
+:::
 
-| Schlüssel          | Typ            | Hinweise                                                                     |
-| ------------------ | -------------- | ---------------------------------------------------------------------------- |
-| 1Password          | Software       | Sehr benutzerfreundlich, synchronisiert geräteübergreifend                   |
-| Apple Keychain     | Software       | Sehr benutzerfreundlich, synchronisiert geräteübergreifend auf Apple Geräten |
-| Windows Hello      | Software       | Sehr benutzerfreundlich                                                      |
-| Yubico Yubikey Bio | Hardware USB C | Sehr benutzerfreundlich                                                      |
-| Yubico Yubikey 5C  | Hardware USB C | Ausreichend benutzerfreundlich                                               |
-| Yubico Yubikey 5   | Hardware USB A | Ausreichend benutzerfreundlich                                               |
+| Schlüssel          | Unterstützt | Typ            | Hinweise                                                                                                         |
+| ------------------ | ----------- | -------------- | ---------------------------------------------------------------------------------------------------------------- |
+| 1Password          | ✅          | Software       | Sehr benutzerfreundlich mit biometrischer Authentifizierung, synchronisiert geräteübergreifend                   |
+| Apple Keychain     | ✅          | Software       | Sehr benutzerfreundlich mit biometrischer Authentifizierung, synchronisiert geräteübergreifend auf Apple Geräten |
+| Bitwarden          | ❌          | Software       | PRF wird nicht unterstützt                                                                                       |
+| Dashlane           | ❌          | Software       | PRF wird nicht unterstützt                                                                                       |
+| Windows Hello      | ✅          | Software       | Sehr benutzerfreundlich mit biometrischer Authentifizierung                                                      |
+| Yubico Yubikey Bio | ✅          | Hardware USB-C | Sehr benutzerfreundlich                                                                                          |
+| Yubico Yubikey 5C  | ✅          | Hardware USB-C | Bedienung in Ordnung                                                                                             |
+| Yubico Yubikey 5   | ✅          | Hardware USB-A | Bedienung in Ordnung                                                                                             |
 
-### Ungetestet (bis v2.1.0 inkompatibel)
+### Empfehlungen
 
-- Bitwarden (Software)
-- Dashlane (Software)
+Wir empfehlen, einen Passkey zu verwenden, der Deinen täglichen Bedürfnissen entspricht, um OpenReception schnell zu entsperren.
 
-Zuletzt am 8. Juli 2026 getestet.
+Verwende einen Passkey für jede Mitarbeiter:in/ jeden Arbeitsplatz, der auf OpenReception zugreift. Jede Mitarbeiter:in / jeder Arbeitsplatz muss sich mit einer eigenen E-Mail-Adresse registrieren.
+
+Zusätzlich empfehlen wir die Verwendung eines Hardware-Passkeys für den Notfallzugriff, falls Du den Zugriff auf Deinen primären Passkey verloren hast. Bewahre ihn an einem sicheren Ort auf, damit Du ihn im Notfall verwenden kannst. **Wenn Du alle Deine Passkeys verlierst, verlierst Du den Zugriff auf Termine**.
+
+In naher Zukunft wirst Du in der Lage sein, mehrere Passkeys für jede Mitarbeiter:in zu registrieren.
