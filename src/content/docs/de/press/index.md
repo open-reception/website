@@ -9,6 +9,10 @@ Dies ist ein Forschungsprojekt, gefördert vom [Bundesministerium für Forschung
 
 Diese Seite enthält Pressemitteilungen und Partner-Informationen über dieses Projekt.
 
+## Pressemitteilungen per E-Mail
+
+Sie können die OpenReception Pressemitteilung bequem [per E-Mail abonnieren](https://app.keila.io/forms/nfrm_Q3LDPM3Z).
+
 ## Aktuelle Mitteilungen
 
 - [2026-05-04 OpenReception Version 1 jetzt live](/press/2026-05-04-open-reception-verison-1-now-live)

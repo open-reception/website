@@ -9,6 +9,10 @@ This is a research project funded by the [Federal Ministry of Research, Technolo
 
 This page contains press releases/ partner information about this project.
 
+## Subscribe to press releases
+
+If you want to get press releases right to you e-mail inbox, you can [subscribe](https://app.keila.io/forms/nfrm_Q3LDPM3Z).
+
 ## Latest Releases
 
 - [2026-05-04 OpenReception Version 1 is now live](/press/2026-05-04-open-reception-verison-1-now-live)

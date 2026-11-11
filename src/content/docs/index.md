@@ -4,7 +4,7 @@ description: End-to-end encrypted appointment booking platform
 template: splash
 banner:
   content: |
-    🗣️ Questions? Want to get involved? Join our <a href="/community/meetup" class="underline">community meetup every first Wednesday</a>!
+    🗣️ Get in touch for <a href="https://open-reception.com/de/anfragen" class="underline">OpenReception Managed Hosting</a>.
 hero:
   tagline: End-to-end encrypted appointment booking platform.
   image:
@@ -15,8 +15,8 @@ hero:
       link: /getting-started
       icon: rocket
       variant: primary
-    - text: Research
-      link: /research
+    - text: Practice Newsletter
+      link: /community/practice-newsletter
       icon: document
       variant: secondary
 ---

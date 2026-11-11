@@ -4,7 +4,7 @@ description: Ende-zu-Ende verschlüsselte Platform für Terminbuchung
 template: splash
 banner:
   content: |
-    🗣️ Fragen? Mitmachen? Nimm' an unserem <a href="/de/community/meetup" class="underline">Community Meetup jeden ersten Mittwoch im Monat</a> teil!
+    🗣️ Kontaktieren Sie uns für <a href="https://open-reception.com/de/anfragen" class="underline">OpenReception Managed Hosting</a>.
 hero:
   tagline: Ende-zu-Ende verschlüsselte Platform für Terminbuchung.
   image:
@@ -15,8 +15,8 @@ hero:
       link: /de/getting-started
       icon: rocket
       variant: primary
-    - text: Recherche
-      link: /de/research
+    - text: Praxis Newsletter
+      link: /de/community/practice-newsletter
       icon: document
       variant: secondary
 ---
