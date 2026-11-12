@@ -30,9 +30,18 @@ const t = useTranslations(lang);
     </div>
   </div>
 
-  <div>
-    <a href="https://ludwigweise.de/impressum">{t("footer.imprint")}</a> ·
-    <a href="https://ludwigweise.de/datenschutz">{t("footer.privacy")}</a> ·
-    <a href="/press">{t("footer.press")}</a>
+  <div class="flex flex-wrap gap-x-4">
+    <a href={lang === "de" ? "/de/imprint" : "/imprint"}
+      >{t("footer.imprint")}</a
+    >
+    <a href={lang === "de" ? "/de/privacy" : "/privacy"}
+      >{t("footer.privacy")}</a
+    >
+    <a href={lang === "de" ? "/de/press" : "/press"}>{t("footer.press")}</a>
+    <a
+      href={lang === "de"
+        ? "/de/community/practice-newsletter"
+        : "/community/practice-newsletter"}>{t("footer.practiceNewsletter")}</a
+    >
   </div>
 </div>

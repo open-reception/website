@@ -1,5 +1,345 @@
 @import "tailwindcss";
+
+/* Required for light background in footer logo area */
 @custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@layer starlight, openreception;
+
+@layer openreception {
+
+    :root,
+    ::backdrop {
+
+        /*
+        
+            OpenReception Colors (copied)
+        
+        */
+
+        --background: oklch(1 0 0);
+        --foreground: oklch(0.129 0.042 264.695);
+        --card: oklch(1 0 0);
+        --card-foreground: oklch(0.129 0.042 264.695);
+        --popover: oklch(1 0 0);
+        --popover-foreground: oklch(0.129 0.042 264.695);
+        --primary: oklch(0.208 0.042 265.755);
+        --primary-foreground: oklch(0.984 0.003 247.858);
+        --secondary: oklch(0.968 0.007 247.896);
+        --secondary-foreground: oklch(0.208 0.042 265.755);
+        --muted: oklch(0.968 0.007 247.896);
+        --muted-foreground: oklch(0.554 0.046 257.417);
+        --accent: oklch(0.968 0.007 247.896);
+        --accent-foreground: oklch(0.208 0.042 265.755);
+        --destructive: oklch(0.577 0.245 27.325);
+        --border: oklch(0.929 0.013 255.508);
+        --input: oklch(0.929 0.013 255.508);
+        --ring: oklch(0.704 0.04 256.788);
+        --chart-1: oklch(0.646 0.222 41.116);
+        --chart-2: oklch(0.6 0.118 184.704);
+        --chart-3: oklch(0.398 0.07 227.392);
+        --chart-4: oklch(0.828 0.189 84.429);
+        --chart-5: oklch(0.769 0.188 70.08);
+        --sidebar: oklch(0.984 0.003 247.858);
+        --sidebar-foreground: oklch(0.129 0.042 264.695);
+        --sidebar-primary: oklch(0.208 0.042 265.755);
+        --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
+        --sidebar-accent: oklch(0.968 0.007 247.896);
+        --sidebar-accent-foreground: oklch(0.208 0.042 265.755);
+        --sidebar-border: oklch(0.929 0.013 255.508);
+        --sidebar-ring: oklch(0.704 0.04 256.788);
+
+        /* custom colors */
+        --lighter: oklch(74.262% 0.05601 254.57);
+        --light: oklch(65.382% 0.05802 257.123);
+        --medium: oklch(57.414% 0.04099 256.06);
+        --dark: oklch(40.615% 0.0213 256.41);
+        --darker: oklch(26.345% 0.01439 261.705);
+
+        /*
+        
+            Custom Colors
+        
+        */
+
+        --green: oklch(77.895% 0.23625 146.007);
+        --blue: oklch(42.694% 0.24781 265.266);
+        --purple: oklch(51.282% 0.24016 309.86);
+
+        /*
+        
+            Dark Theme (default)
+        
+        */
+
+        /* Accent colors */
+        /* --sl-color-accent-low: red; */
+        --sl-color-accent: var(--blue);
+        /* --sl-color-accent-high: yellow; */
+
+        /* Gray scale */
+        --sl-color-white: #ffffff;
+        --sl-color-gray-1: var(--ring);
+        --sl-color-gray-2: var(--lighter);
+        --sl-color-gray-3: var(--light);
+        --sl-color-gray-4: var(--medium);
+        --sl-color-gray-5: var(--dark);
+        --sl-color-gray-6: var(--darker);
+        --sl-color-gray-7: var(--sidebar-primary);
+        --sl-color-black: var(--sidebar-foreground);
+
+        /* Semantic colors — Red (danger) */
+        --sl-color-red-low: oklch(from var(--destructive) l c h / 20%);
+        --sl-color-red: var(--destructive);
+        --sl-color-red-high: oklch(from var(--destructive) calc(l * 1.2) c h);
+
+        /* Semantic colors — Orange (caution) */
+        --sl-color-orange-low: oklch(from var(--chart-5) l c h / 20%);
+        --sl-color-orange: var(--chart-5);
+        --sl-color-orange-high: oklch(from var(--chart-5) calc(l * 2) c h);
+
+        /* Semantic colors — Green (success) */
+        --sl-color-green-low: oklch(from var(--green) l c h / 20%);
+        --sl-color-green: var(--green);
+        --sl-color-green-high: oklch(from var(--green) calc(l * 2) c h);
+
+        /* Semantic colors — Blue (note) */
+        --sl-color-blue-low: oklch(from var(--blue) l c h / 20%);
+        --sl-color-blue: var(--blue);
+        --sl-color-blue-high: oklch(from var(--blue) calc(l * 2) c h);
+
+        /* Semantic colors — Purple (tip) */
+        --sl-color-purple-low: oklch(from var(--purple) l c h / 20%);
+        --sl-color-purple: var(--purple);
+        --sl-color-purple-high: oklch(from var(--purple) calc(l * 2) c h);
+
+        /* Background colors */
+        --sl-color-bg: var(--sl-color-black);
+        --sl-color-bg-nav: var(--sl-color-black);
+        --sl-color-bg-sidebar: var(--sl-color-black);
+        /* --sl-color-bg-inline-code: red;
+        --sl-color-bg-accent: orange; */
+        --sl-color-banner-bg: var(--sl-color-white);
+
+        /* Text colors */
+        --sl-color-text: var(--sl-color-white);
+        --sl-color-text-accent: var(--sl-color-white);
+        --sl-color-text-invert: var(--primary);
+
+        /* Border/hairline colors */
+        --sl-color-hairline-light: var(--darker);
+        --sl-color-hairline: var(--darker);
+        --sl-color-hairline-shade: var(--darker);
+        --sl-color-backdrop-overlay: var(--darker);
+
+        /* Banner */
+        --sl-color-banner-text: var(--primary);
+
+        /* Shadows */
+        --sl-shadow-xs: none;
+        --sl-shadow-sm: none;
+        --sl-shadow-md: none;
+        --sl-shadow-lg: none;
+
+        .sl-link-button.primary:hover {
+            background-color: var(--accent);
+        }
+
+        .sl-link-button.secondary:hover {
+            background-color: var(--sl-color-gray-7);
+        }
+
+        .expressive-code {
+            --ec-frm-edBg: var(--sidebar-primary);
+        }
+
+        details summary .toggle {
+            border-color: var(--ring) !important;
+        }
+
+        .social-icons a {
+            color: var(--sl-color-gray-3);
+        }
+
+        .social-icons a:hover {
+            color: var(--sl-color-white);
+        }
+
+        /* Badges */
+        --sl-badge-default-bg: var(--sl-color-white);
+        --sl-badge-default-text: var(--primary);
+        --sl-badge-danger-bg: oklch(from var(--destructive) l c h / 80%);
+        --sl-badge-danger-border: transparent;
+    }
+
+    /*
+        
+        Light Theme
+    
+    */
+
+    :root[data-theme="light"],
+    [data-theme="light"] ::backdrop {
+        /* Accent colors */
+        /* --sl-color-accent-low: red; */
+        --sl-color-accent: var(--blue);
+        /* --sl-color-accent-high: yellow; */
+
+        /* Gray scale */
+        --sl-color-white: var(--sidebar-foreground);
+        --sl-color-gray-1: var(--sidebar-primary);
+        --sl-color-gray-2: var(--darker);
+        --sl-color-gray-3: var(--dark);
+        --sl-color-gray-4: var(--medium);
+        --sl-color-gray-5: var(--light);
+        --sl-color-gray-6: var(--lighter);
+        --sl-color-gray-7: var(--ring);
+        --sl-color-black: #ffffff;
+
+        /* Semantic colors — Red (danger) */
+        --sl-color-red-low: oklch(from var(--destructive) l c h / 20%);
+        --sl-color-red: var(--destructive);
+        --sl-color-red-high: oklch(from var(--destructive) calc(l * 0.5) c h);
+
+        /* Semantic colors — Orange (caution) */
+        --sl-color-orange-low: oklch(from var(--chart-5) l c h / 20%);
+        --sl-color-orange: var(--chart-5);
+        --sl-color-orange-high: oklch(from var(--chart-5) calc(l * 0.5) c h);
+
+        /* Semantic colors — Green (success) */
+        --sl-color-green-low: oklch(from var(--green) l c h / 20%);
+        --sl-color-green: var(--green);
+        --sl-color-green-high: oklch(from var(--green) calc(l * 0.5) c h);
+
+        /* Semantic colors — Blue (note) */
+        --sl-color-blue-low: oklch(from var(--blue) l c h / 20%);
+        --sl-color-blue: var(--blue);
+        --sl-color-blue-high: oklch(from var(--blue) calc(l * 0.5) c h);
+        ;
+
+        /* Semantic colors — Purple (tip) */
+        --sl-color-purple-low: oklch(from var(--purple) l c h / 20%);
+        --sl-color-purple: var(--purple);
+        --sl-color-purple-high: oklch(from var(--purple) calc(l * 0.5) c h);
+
+        /* Background colors */
+        --sl-color-bg: var(--sl-color-black);
+        --sl-color-bg-nav: var(--sl-color-black);
+        --sl-color-bg-sidebar: var(--sl-color-black);
+        /* --sl-color-bg-inline-code: red;
+        --sl-color-bg-accent: orange; */
+        --sl-color-banner-bg: var(--primary);
+
+        /* Text colors */
+        --sl-color-text: var(--primary);
+        --sl-color-text-accent: var(--primary);
+        --sl-color-text-invert: var(--primary-foreground);
+
+        /* Border/hairline colors */
+        --sl-color-hairline-light: var(--border);
+        --sl-color-hairline: var(--border);
+        --sl-color-hairline-shade: var(--border);
+        --sl-color-backdrop-overlay: var(--primary);
+
+        /* Banner */
+        --sl-color-banner-text: var(--sl-color-black);
+
+        /* Shadows */
+        --sl-shadow-xs: none;
+        --sl-shadow-sm: none;
+        --sl-shadow-md: none;
+        --sl-shadow-lg: none;
+
+        .sl-link-button.primary:hover {
+            color: var(--sl-color-gray-7);
+        }
+
+        .sl-link-button.secondary:hover {
+            background-color: var(--sidebar-accent);
+        }
+
+        .sl-link-card:hover {
+            background-color: var(--sidebar-accent);
+            border-color: var(--muted-foreground);
+        }
+
+        .expressive-code {
+            --ec-frm-edBg: var(--muted);
+        }
+
+        .right-sidebar-container details .isMobile li a {
+            border-top-color: var(--accent) !important;
+        }
+
+        .right-sidebar-container details .dropdown {
+            border-color: var(--muted) !important;
+        }
+
+        .sl-markdown-content img {
+            border: 1px solid var(--border);
+        }
+
+        /* Badges */
+        --sl-badge-default-bg: var(--primary);
+        --sl-badge-default-text: var(--sl-color-black);
+        --sl-badge-default-border: var(--sl-color-black);
+        --sl-badge-danger-bg: var(--destructive);
+        --sl-badge-danger-border: transparent;
+        --sl-badge-danger-text: var(--sl-color-black);
+    }
+
+    /*
+        
+        Components
+    
+    */
+
+    /* Content Images */
+    .sl-markdown-content img {
+        border-radius: 4px;
+    }
+
+    .meta {
+        color: var(--lighter);
+    }
+
+    .sl-link-button {
+        border-radius: 0.75rem;
+    }
+
+    .link-title {
+        font-size: 1.125rem;
+    }
+
+    /* Cards */
+    .card {
+        border-radius: 0.75rem;
+        transition: border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .card:hover {
+        border-color: var(--frost-2);
+        box-shadow: var(--sl-shadow-sm);
+    }
+
+    /* Link cards */
+    .sl-link-card {
+        border-radius: 0.75rem;
+    }
+
+    /* Asides/callouts */
+    .starlight-aside {
+        border-radius: 0 0.5rem 0.5rem 0;
+    }
+
+    .expressive-code pre {
+        white-space: pre-wrap;
+    }
+
+    /* Inline code */
+    .sl-markdown-content :not(a)>code:not(:where(.not-content *)) {
+        border-radius: 0.25rem;
+    }
+}
 
 @layer base {
 
@@ -12,10 +352,5 @@
 
     a {
         text-decoration: underline;
-    }
-
-    .sl-markdown-content img {
-        border: 1px solid var(--sl-color-gray-4);
-        border-radius: 4px;
     }
 }

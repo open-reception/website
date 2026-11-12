@@ -10,13 +10,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/starlight": "^0.37.1",
-    "@tailwindcss/vite": "^4.1.18",
-    "astro": "^5.16.6",
-    "sharp": "^0.34.5",
-    "starlight-github-alerts": "^0.1.1",
-    "starlight-heading-badges": "^0.6.1",
-    "starlight-theme-nova": "^0.10.0",
-    "tailwindcss": "^4.1.18"
+    "@astrojs/starlight": "^0.42.10",
+    "@astrojs/starlight-tailwind": "^5.0.0",
+    "@tailwindcss/vite": "^4.3.5",
+    "astro": "^7.4.10",
+    "sharp": "^0.35.5",
+    "starlight-github-alerts": "^0.5.0",
+    "starlight-heading-badges": "^0.8.0",
+    "tailwindcss": "^4.3.5",
+    "typescript": "^6.0.3"
+  },
+  "devDependencies": {
+    "@astrojs/check": "^0.9.12"
   }
 }

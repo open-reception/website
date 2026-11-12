@@ -4,7 +4,7 @@ description: Ende-zu-Ende verschlüsselte Platform für Terminbuchung
 template: splash
 banner:
   content: |
-    🗣️ Kontaktieren Sie uns für <a href="https://open-reception.com/de/anfragen" class="underline">OpenReception Managed Hosting</a>.
+    🗣️ Kontaktieren Sie uns für <a href="https://open-reception.com/de/anfragen" class="underline">OpenReception Managed-Hosting</a>.
 hero:
   tagline: Ende-zu-Ende verschlüsselte Platform für Terminbuchung.
   image:

@@ -6,8 +6,7 @@ const t = useTranslations(lang);
 ---
 
 <a
-  class="nova-link-button not-content nova-link-button-primary"
-  style="margin-left: auto; font-size: 0.75rem; padding: 0.25rem .5rem; border-radius: 0.5rem;"
+  class="bg-[var(--primary)] text-white dark:bg-[var(--sl-color-white)] dark:text-[var(--primary)] no-underline block ml-auto! text-sm px-2 py-1 rounded-sm hover:text-[var(--ring)] dark:hover:text-[var(--primary)] dark:hover:bg-[var(--border)]"
   href={lang === "de" ? "/de/getting-started" : "/getting-started"}
 >
   {t("header.getStsarted")}

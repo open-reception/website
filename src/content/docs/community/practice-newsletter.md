@@ -6,7 +6,7 @@ sidebar:
   order: 4
 ---
 
-If you want to keep an eye on OpenReception, you can follow us on [Mastodon](https://mastodon.social/@openreception) and [Bluesky](https://bsky.app/profile/openreception.bsky.social) or join our practice-specific newsletter.
+If you want to keep an eye on OpenReception, you can follow us on [Mastodon](https://mastodon.social/@openreception) and [Bluesky](https://bsky.app/profile/openreception.bsky.social) or join our German practice-specific newsletter.
 
 ## Subscribe to Practice Newsletter
 

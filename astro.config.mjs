@@ -2,7 +2,6 @@
 import {defineConfig} from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwindcss from "@tailwindcss/vite";
-import starlightThemeNova from "starlight-theme-nova";
 import starlightGitHubAlerts from "starlight-github-alerts";
 import starlightHeadingBadges from "starlight-heading-badges";
 
@@ -12,11 +11,7 @@ export default defineConfig({
   prefetch: true,
   integrations: [
     starlight({
-      plugins: [
-        starlightThemeNova(),
-        starlightGitHubAlerts(),
-        starlightHeadingBadges(),
-      ],
+      plugins: [starlightGitHubAlerts(), starlightHeadingBadges()],
       title: "OpenReception",
       defaultLocale: "root",
       locales: {
@@ -61,7 +56,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "Getting Started",
-          autogenerate: {directory: "getting-started"},
+          items: [{autogenerate: {directory: "getting-started"}}],
           translations: {
             de: "Loslegen",
           },
@@ -69,7 +64,7 @@ export default defineConfig({
         {
           label: "Tenants",
           collapsed: true,
-          autogenerate: {directory: "tenants"},
+          items: [{autogenerate: {directory: "tenants"}}],
           translations: {
             de: "Mandanten",
           },
@@ -77,7 +72,7 @@ export default defineConfig({
         {
           label: "Agents & Absences",
           collapsed: true,
-          autogenerate: {directory: "agents"},
+          items: [{autogenerate: {directory: "agents"}}],
           translations: {
             de: "Akteure & Abwesenheiten",
           },
@@ -85,7 +80,7 @@ export default defineConfig({
         {
           label: "Channels",
           collapsed: true,
-          autogenerate: {directory: "channels"},
+          items: [{autogenerate: {directory: "channels"}}],
           translations: {
             de: "Kanäle",
           },
@@ -93,7 +88,7 @@ export default defineConfig({
         {
           label: "Calendar",
           collapsed: true,
-          autogenerate: {directory: "calendar"},
+          items: [{autogenerate: {directory: "calendar"}}],
           translations: {
             de: "Kalender",
           },
@@ -101,7 +96,7 @@ export default defineConfig({
         {
           label: "Staff & Notifications",
           collapsed: true,
-          autogenerate: {directory: "staff"},
+          items: [{autogenerate: {directory: "staff"}}],
           translations: {
             de: "Personal & Benachrichtigungen",
           },
@@ -109,7 +104,7 @@ export default defineConfig({
         {
           label: "Settings",
           collapsed: true,
-          autogenerate: {directory: "settings"},
+          items: [{autogenerate: {directory: "settings"}}],
           translations: {
             de: "Einstellungen",
           },
@@ -117,7 +112,7 @@ export default defineConfig({
         {
           label: "Account",
           collapsed: true,
-          autogenerate: {directory: "account"},
+          items: [{autogenerate: {directory: "account"}}],
           translations: {
             de: "Konto",
           },
@@ -125,21 +120,21 @@ export default defineConfig({
         {
           label: "Client Side",
           collapsed: true,
-          autogenerate: {directory: "client-side"},
+          items: [{autogenerate: {directory: "client-side"}}],
           translations: {
             de: "Klientenfunktionen",
           },
         },
         {
           label: "Community",
-          autogenerate: {directory: "community"},
+          items: [{autogenerate: {directory: "community"}}],
           translations: {
             de: "Community",
           },
         },
         {
           label: "Research",
-          autogenerate: {directory: "research"},
+          items: [{autogenerate: {directory: "research"}}],
           translations: {
             de: "Recherche",
           },
