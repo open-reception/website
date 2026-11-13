@@ -249,6 +249,11 @@
         --sl-shadow-md: none;
         --sl-shadow-lg: none;
 
+        .hero .sl-link-button.primary:hover {
+            background-color: var(--primary);
+            color: var(--sl-color-gray-7);
+        }
+
         .sl-link-button.primary:hover {
             color: var(--sl-color-gray-7);
         }
@@ -292,6 +297,48 @@
         Components
     
     */
+
+    .hero h1 {
+        font-size: 2rem;
+        position: relative;
+    }
+
+    .hero h1:before {
+        content: "Open-Source";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: -1.9rem;
+        font-size: 0.75rem;
+        font-weight: normal;
+        border-radius: 0.25rem;
+        border: thin solid oklch(from var(--destructive) l c h / 30%);
+        padding: 0.25rem 0.5rem;
+        background-color: oklch(from var(--destructive) l c h / 20%);
+    }
+
+    @media (width >=50rem) {
+        .hero h1:before {
+            left: 0;
+            transform: translateX(0);
+        }
+    }
+
+    .hero .actions {
+        gap: 1rem;
+    }
+
+    @media (width >=50rem) {
+        .hero {
+            padding-top: 0;
+            grid-template-columns: 3fr 4fr;
+        }
+
+        .hero img {
+            width: max(80%, 25rem);
+        }
+    }
 
     /* Content Images */
     .sl-markdown-content img {

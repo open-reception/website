@@ -1,0 +1,48 @@
+---
+title: OpenReception
+description: Ende-zu-Ende verschlüsselte Platform für Terminbuchung
+template: splash
+banner:
+  content: |
+    🗣️ Kontaktieren Sie uns für <a href="https://open-reception.com/de/anfragen" class="underline">OpenReception Managed-Hosting</a>.
+hero:
+  title: Online-Termine für Ihre Praxis
+  tagline: Ende-zu-Ende verschlüsselte Platform für Terminbuchung.
+  image:
+    alt: Frau arbeitet an der Anmeldung
+    file: ../../../assets/typing-cuate.svg
+  actions:
+    - text: Managed-Hosting
+      link: https://open-reception.com
+      icon: rocket
+      variant: primary
+    - text: Erste Schritte
+      link: /de/getting-started
+      icon: open-book
+      variant: secondary
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {Card} from "@astrojs/starlight/components";
+
+<CardGrid>
+  <Card title="Volle Kontrolle" icon="approve-check">
+    OpenReception stellt Sie und Ihre Praxis in den Mittelpunkt der
+    Terminbuchung. Ihre Marke, Ihre Regeln.
+  </Card>
+  <Card title="Konfigurierbar" icon="pencil">
+    Basierend auf unserer [Forschung](/de/research) und Interviews mit Dutzenden
+    von medizinischen Einrichtungen wissen wir, was in Ihrer Praxis benötigt
+    wird.
+  </Card>
+  <Card title="Privat & Sicher" icon="padlock">
+    Ende-zu-Ende verschlüsselte Daten, auf die nur Patient:innen und
+    autorisiertes Personal zugreifen kann. Kein KI-Training basierend auf Daten.
+  </Card>
+  <Card title="Open-Source" icon="star">
+    Von [Karl Ludwig Weise](https://ludwigweise.de), [Hendrik
+    Belitz](https://innovation-through-understanding.de/) und der Community
+    entwickelt. Der Prototyp wurde im Rahmen des
+    [PrototypeFund](https://prototypefund.de/) Jahrgangs eins entwickelt.
+  </Card>
+</CardGrid>

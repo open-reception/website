@@ -3,6 +3,7 @@ title: Practice Newsletter
 description: Stay up to day with our German Practice Newsletter
 lastUpdated: 2026-11-10
 sidebar:
+  badge: New
   order: 4
 ---
 

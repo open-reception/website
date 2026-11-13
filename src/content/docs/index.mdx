@@ -1,0 +1,47 @@
+---
+title: OpenReception
+description: End-to-end encrypted appointment booking platform
+template: splash
+banner:
+  content: |
+    🗣️ Get in touch for <a href="https://open-reception.com/de/anfragen" class="underline">OpenReception Managed Hosting</a>.
+hero:
+  title: Online-Appointments for your practice
+  tagline: End-to-end encrypted appointment booking platform.
+  image:
+    alt: Woman working at reception
+    file: ../../assets/typing-cuate.svg
+  actions:
+    - text: Managed-Hosting
+      link: https://open-reception.com
+      icon: rocket
+      variant: primary
+    - text: Get Started
+      link: /getting-started
+      icon: open-book
+      variant: secondary
+---
+
+import {CardGrid} from "@astrojs/starlight/components";
+import {Card} from "@astrojs/starlight/components";
+
+<CardGrid>
+  <Card title="Full Control" icon="approve-check">
+    OpenReception puts you and your practice at the center of the appointment
+    booking experience. Your brand, your rules.
+  </Card>
+  <Card title="Configurable" icon="pencil">
+    Based on our [research](/research) and interviews with dozens of medical
+    practices we know, what's needed in your practice.
+  </Card>
+  <Card title="Private & Secure" icon="padlock">
+    End-to-end encrypted data that only patients and authorized staff can
+    access. No AI training based on patient data.
+  </Card>
+  <Card title="Open-Source" icon="star">
+    Developed by [Karl Ludwig Weise](https://ludwigweise.de), [Hendrik
+    Belitz](https://innovation-through-understanding.de/) and the community. The
+    prototype was built as part of the
+    [PrototypeFund](https://prototypefund.de/) year one.
+  </Card>
+</CardGrid>

@@ -3,6 +3,7 @@ title: Praxis-Newsletter
 description: Bleiben Sie auf dem neusten Stand mit dem Praxis-Newsletter
 lastUpdated: 2026-11-10
 sidebar:
+  badge: Neu
   order: 4
 ---
 
