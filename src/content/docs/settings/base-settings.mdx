@@ -1,38 +1,53 @@
 ---
 title: Tenant Base Settings
-description: This step-by-step guide shows you how to edit tenant settings in OpenReception
-lastUpdated: 2026-03-01
+description: This guide shows you how to edit tenant settings in OpenReception
+lastUpdated: 2026-11-22
 sidebar:
   order: 2
 ---
 
-import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
+
+When you navigate to the settings section of the dashboard, you will see the settings overview. General settings and an address are required.
+
+![Tenant settings overview](./assets/settings/settings-overview.png)
+
+## General
 
 :::caution
 If you are adding languages after you've set up your organizations description (within the same settings form), agents or channels, you should revisit them to add the missing translations.
 :::
 
-<Steps>
+You can make the following basic settings for your public facing appointment booking page:
 
-1. When you navigate to the settings section of the dashboard, you automatically see the settings form.
+- Change the **supported languages**
+- Set the **default language**
+- Set the **name of your organization**
+- Upload an **image/ logo**
+- Add a **description for your organization**
 
-1. You can make the following basic settings for your public facing appointment booking page:
-   - Change the **supported languages**
-   - Set the **default language**
-   - Set the **name of your organization**
-   - Upload an **image/ logo**
-   - Add a **description for your organization**
-   - Add an **address** for your organization (it will appear in confirmation e-mails)
-   - Add **links** like website, imprint and privacy policy
-   - Define **when past appointments should be deleted**
-   - Require clients to add their **phone number** to the appointment
+![General settings form](./assets/settings/general-settings.png)
 
-   ![Tenant settings form](./assets/settings/1-settings-form.png)
+## Address
 
-1. Click _Save_ to apply your changes.
+Add an **address** for your organization: It will appear in confirmation e-mails and downloaded calendar events.
 
-   If you are currently onboarding your appointment booking page, you will see additional blue notifications that guide you through this process.
+![Address settings form](./assets/settings/address.png)
 
-   ![Tenant settings saved during onboarding](./assets/settings/2-settings-form-onboarding-notification.png)
+## Links
 
-</Steps>
+Add **links** like your website, imprint, and privacy policy.
+
+![Links settings form](./assets/settings/links.png)
+
+## Appointment Progress <Badge text="Premium Feature" variant="danger" />
+
+You can define custom appointment progress statuses for your organization. Learn more in the [calendar documentation](/calendar/appointment-progress).
+
+![Appointment progress form](./assets/settings/appointment-progress.png)
+
+## Advanced
+
+Define **when past appointments should be deleted** or require clients to add their **phone number** to the appointment
+
+![Advanced settings form](./assets/settings/advanced-settings.png)

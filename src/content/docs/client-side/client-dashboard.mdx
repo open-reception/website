@@ -1,12 +1,13 @@
 ---
 title: Client Dashboard
 description: This page guides you though all client side dashboard features
-lastUpdated: 2026-03-01
+lastUpdated: 2026-11-22
 sidebar:
   order: 3
 ---
 
 import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
 
 This page guides you though all client side dashboard features.
 
@@ -32,9 +33,15 @@ This page guides you though all client side dashboard features.
 
 On the client dashboard you will see all your future appointments.
 
+![Client dashboard](./assets/client-dashboard/3-client-overview.png)
+
 You can also safely logout.
 
-![Client dashboard](./assets/client-dashboard/3-client-overview.png)
+### Appointment Information <Badge text="Plus Feature" variant="danger" />
+
+Some appointments have details. You can click the _Details_ button to view more information about the appointment.
+
+![Appointment information on client dashboard](./assets/client-dashboard/6-appointment-information.png)
 
 ## Cancel Appointment
 
@@ -47,6 +54,7 @@ You can cancel future appointments using the client dashboard.
     ![Client dashboard](./assets/client-dashboard/3-client-overview.png)
 
 1.  A modal will open. Click _Cancel_ to confirm.
+    - The cancellation policy will be displayed here. <Badge text="Premium Feature" variant="danger" />
 
     ![Appointment details with cancel button](./assets/client-dashboard/4-cancel-appointment.png)
 

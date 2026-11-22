@@ -1,38 +1,53 @@
 ---
 title: Mandanten Grundeinstellungen
-description: Diese Schritt-für-Schritt-Anleitung zeigt Dir, wie Du Mandanten-Einstellungen in OpenReception bearbeitest
-lastUpdated: 2026-03-01
+description: Diese Anleitung zeigt Dir, wie Du Mandanten-Einstellungen in OpenReception bearbeitest
+lastUpdated: 2026-11-22
 sidebar:
   order: 2
 ---
 
-import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
+
+Wenn Du zum Einstellungsbereich des Dashboards navigierst, hast Du einen Überblick über die möglichen Mandanten-Einstellungen.
+
+![Tenant settings overview](./assets/settings/settings-overview.png)
+
+## Allgemein
 
 :::caution
 Wenn Du Sprachen hinzufügst, nachdem Du die Beschreibung Deiner Organisation (im gleichen Formular), Akteure:innen oder Kanäle eingerichtet hast, solltest Du diese erneut aufrufen, um die fehlenden Übersetzungen hinzuzufügen.
 :::
 
-<Steps>
+Du kannst die folgenden Grundeinstellungen für Deine öffentliche Terminbuchungsseite vornehmen:
 
-1. Wenn Du zum Einstellungsbereich des Dashboards navigierst, siehst Du automatisch das Einstellungsformular.
+- Die **unterstützten Sprachen** einstellen
+- Die **Standardsprache** festlegen
+- Den **Namen Deiner Organisation** festlegen
+- Ein **Bild/ Logo** hochladen
+- Eine **Beschreibung für Deine Organisation** hinzufügen
 
-1. Du kannst die folgenden Grundeinstellungen für Deine öffentliche Terminbuchungsseite vornehmen:
-   - Ändere die **unterstützten Sprachen**
-   - Lege die **Standardsprache** fest
-   - Lege den **Namen Deiner Organisation** fest
-   - Lade ein **Bild/Logo** hoch
-   - Füge eine **Beschreibung für Deine Organisation** hinzu
-   - Füge eine **Adresse** für Deine Organisation hinzu (sie wird in Bestätigungsmails angezeigt)
-   - Füge **Links** zu Website, Impressum oder Datenschutzerklärung hinzu
-   - Lege fest, **wann vergangene Termine gelöscht werden sollen**
-   - Verlange von Klient:innen, ihre **Telefonnummer** zum Termin hinzuzufügen
+![Allgemeine Einstellungen Formular](./assets/settings/general-settings.png)
 
-   ![Mandanten-Einstellungsformular](./assets/settings/1-settings-form.png)
+## Adresse
 
-1. Klicke _Speichern_, um Deine Änderungen zu übernehmen.
+Füge eine **Adresse** für Deine Organisation hinzu: Sie wird in Bestätigungs-E-Mails und heruntergeladenen Kalendereinträgen angezeigt.
 
-   Wenn Du gerade Deine Terminbuchungsseite einrichtest, siehst Du zusätzliche blaue Benachrichtigungen, die Dich durch diesen Prozess führen.
+![Adress-Formular](./assets/settings/address.png)
 
-   ![Mandanten-Einstellungen beim Onboarding gespeichert](./assets/settings/2-settings-form-onboarding-notification.png)
+## Links
 
-</Steps>
+Füge **Links** wie Deine Website, Dein Impressum und Deine Datenschutzrichtlinie hinzu.
+
+![Links-Formular](./assets/settings/links.png)
+
+## Termin-Status <Badge text="Premium Funktion" variant="danger" />
+
+Du kannst benutzerdefinierte Termin-Status für Deine Organisation festlegen. Erfahre mehr in der [Kalender-Dokumentation](/de/calendar/appointment-progress).
+
+![Termin-Status Formular](./assets/settings/appointment-progress.png)
+
+## Erweitert
+
+Lege fest, **wann vergangene Termine gelöscht werden sollen** oder ob Klient:innen ihre **Telefonnummer** zum Termin hinzufügen müssen.
+
+![Erweiterte Einstellungen Formular](./assets/settings/advanced-settings.png)

@@ -1,12 +1,13 @@
 ---
 title: Klienten-Dashboard
 description: Diese Seite führt Dich durch alle Dashboard-Funktionen auf Klient:in-Seite
-lastUpdated: 2026-03-01
+lastUpdated: 2026-11-22
 sidebar:
   order: 3
 ---
 
 import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
 
 Diese Seite führt Dich durch alle Dashboard-Funktionen auf Klienten-Seite.
 
@@ -32,9 +33,15 @@ Diese Seite führt Dich durch alle Dashboard-Funktionen auf Klienten-Seite.
 
 Im Klienten-Dashboard siehst Du alle Deine zukünftigen Termine.
 
+![Klienten Dashboard](./assets/client-dashboard/3-client-overview.png)
+
 Du kannst Dich auch sicher abmelden.
 
-![Klienten Dashboard](./assets/client-dashboard/3-client-overview.png)
+### Termindetails <Badge text="Plus Feature" variant="danger" />
+
+Einige Termine haben zusätzliche Informationen. Du kannst auf den _Details_-Button klicken, um mehr Informationen über den Termin zu sehen.
+
+![Termindetails im Klienten-Dashboard](./assets/client-dashboard/6-appointment-information.png)
 
 ## Termin absagen
 
@@ -47,6 +54,7 @@ Du kannst zukünftige Termine über das Klienten-Dashboard absagen.
     ![Klienten Dashboard](./assets/client-dashboard/3-client-overview.png)
 
 1.  Es öffnet sich ein Modal. Klicke _Absagen_, um zu bestätigen.
+    - Die Stornierungsbedingungen werden hier angezeigt. <Badge text="Premium Funktion" variant="danger" />
 
     ![Termindetails mit Absagen-Funktion](./assets/client-dashboard/4-cancel-appointment.png)
 
