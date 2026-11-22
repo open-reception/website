@@ -1,12 +1,14 @@
 ---
 title: Edit Channel
-description: This step-by-step guide shows you how to edit a channel in OpenReception
-lastUpdated: 2026-03-01
+description: This guide shows you how to edit a channel in OpenReception
+lastUpdated: 2026-11-22
 sidebar:
+  badge: New
   order: 3
 ---
 
 import {Steps} from "@astrojs/starlight/components";
+import {Badge} from "@astrojs/starlight/components";
 
 :::note
 If you use descriptions and have added languages since the last time you've edited a channel, you can only save your changes, if you add descriptions of all missing languages.
@@ -18,18 +20,96 @@ If you use descriptions and have added languages since the last time you've edit
 
    ![Channel list](./assets/edit-channel/1-channels-list-with-context-menu.png)
 
-1. A modal with a form opens.
-   - Edit the **name** and **description** in all your languages, if you want
-   - Change the selection for **agents** that can conduct appointments in this channel. When auto-secting agents they will be selected in the order you've set in this list.
-   - Change the selection for **staff members** that will get notifications about this channel (for appointment requests).
-   - Change if this channel should be **public**. If It's not public, only you can book an appointment using the [calendar](../calendar)
-   - Change if appointments **require confirmation**. You will be [notified by the notification system](../staff/notifications) if a new request is added.
-   - Add a **schedule** for you appointments. See [slot templates](../#slot-templates).
+1. If you channel is not fully set up, each required step will have a red indicator.
 
-   ![Edit channel form](./assets/edit-channel/2-edit-channel-form.png)
+   ![Channel detail overview with required settings](./assets/edit-channel/2-channel-required-settings.png)
 
-1. The channel will be updated.
-
-   ![Channel edited](./assets/edit-channel/3-channel-edited.png)
+1. Click on each section you want to edit and make your changes.
 
 </Steps>
+
+## Name & Description
+
+Click on the _Name & Description_ section to edit the channel's name and description.
+
+![Name & Description form](./assets/edit-channel/channel-name-and-description.png)
+
+## Agents
+
+Click on the _Agents_ section to edit the agents that can conduct appointments in this channel. When clients are auto-selecting agents they will be selected in the order you've set in this list.
+
+![Agents form](./assets/edit-channel/channel-agents.png)
+
+## Schedule
+
+Click on the _Schedule_ section to edit the schedule for this channel. You can add as many schedule templates as needed. For each template you can set
+
+- Weekdays
+- Start time
+- End time
+- Duration
+
+Slots for appointments will be automatically created based on the schedule templates you have defined.
+
+![Schedule form](./assets/edit-channel/channel-schedule.png)
+
+## Public Booking
+
+This section allows you to configure how clients that use public booking can interact with this channel.
+
+- Change if this channel should be **public**. If It's not public, only you can book an appointment using the [calendar](/calendar).
+- Change if appointments **require confirmation**. You will be [notified by the notification system](/staff/notifications) if a new request is added.
+- Add [deadlines](#deadlines) for client interaction.
+
+![Public Booking form](./assets/edit-channel/channel-public-booking.png)
+
+### Deadlines
+
+Define when certain actions are allowed. You can define the following deadlines:
+
+- **Require minimum lead time for booking appointments:** Minimum time an appointment has to be booked in advance
+- **Require maximum lead time for booking appointments:** Maximum time an appointment can be booked in advance
+- <Badge text="Premium-Feature" variant="danger" /> **Set start date:** Absolute
+  date and time from which appointments can be booked.
+- <Badge text="Premium-Feature" variant="danger" /> **Set end date:** Absolute
+  date and time until which appointments can be booked.
+- <Badge text="Premium-Feature" variant="danger" /> **Prevent Gaps:** Only
+  allows appointments to be booked at the beginning of the channel slot window
+  or after existing appointments; 5min tolerance; across all appointments.
+- <Badge text="Premium-Feature" variant="danger" /> **Set minimum cancellation
+  lead time:** Minimum lead time to cancel an appointment online.
+
+![Deadlines form](./assets/edit-channel/channel-deadlines.png)
+
+## Notifications
+
+Define which staff members should receive notifications for this channel. Refer to the [notifications documentation](/staff/notifications) for more details.
+
+![Notifications form](./assets/edit-channel/channel-notifications.png)
+
+## Appointment Information <Badge text="Plus-Feature" variant="danger" />
+
+Appointment information are client-facing details that clients will see after booking an appointment. You can define the following information:
+
+- **Text:** Use this to provide additional information or instructions to clients regarding their appointment.
+- **Links:** Use this to provide relevant links to clients regarding their appointment like online anamnesis forms.
+- **Video Room:** Provide a link to a video conferencing room for the appointment. This will be the same link for all appointments in this channel.
+
+![Appointment Information form](./assets/edit-channel/channel-appointment-information.png)
+
+This information will be displayed at a variety of touchpoints in the client booking experience:
+
+- Right after booking on the confirmation page
+- In the appointment details on the client dashboard
+- In the appointment request E-Mail
+- In the appointment confirmation E-Mail
+- In the booking reminder E-Mails
+- In all calendar files (via download or E-Mail attachment)
+
+![Appointment Information after booking an appointment](./assets/edit-channel/appointment-information-after-booking.png)
+
+## Activate/ Deactivate Channel
+
+You can activate or deactivate this channel using button in the top right corner. When a channel is deactivated, it will not be available for booking.
+
+![Activation form](./assets/edit-channel/channel-activate-deactivate.png)

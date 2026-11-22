@@ -1,8 +1,9 @@
 ---
 title: Abwesenheit hinzufügen
 description: Diese Schritt-für-Schritt-Anleitung zeigt Dir, wie Du eine Abwesenheit für einen/eine Akteur:in in OpenReception hinzufügst
-lastUpdated: 2026-03-01
+lastUpdated: 2026-11-22
 sidebar:
+  badge: Neu
   order: 5
 ---
 
@@ -15,13 +16,28 @@ import {Steps} from "@astrojs/starlight/components";
    ![Leere Abwesenheits-Liste](./assets/add-absence/1-empty-absences-list.png)
 
 1. Ein Modal mit einem Formular wird geöffnet.
+   - Wähle den **Typ** einmalig oder wiederkehrend
    - Wähle die abwesende **Akteur:in**
    - Ändere den **Grund**, wenn Du ihn hier verfolgen möchtest.
    - Wähle einen Zeitbereich für die Abwesenheit. Das **Enddatum** muss in der Zukunft liegen.
 
    ![Abwesenheit hinzufügen Formular](./assets/add-absence/2-add-absence-form.png)
 
+   Wenn Du eine wiederkehrende Abwesenheit ausgewählt hast, erscheinen zusätzliche Optionen für das Wiederholungsmuster:
+   - Wähle den/die **Wochentag/e**
+   - Wähle die **von** und **bis** Zeiten
+
+   :::tip
+   Um dies für einen längeren Zeitraum festzulegen, wähle ein **Enddatum** weit in der Zukunft.
+   :::
+
+   ![Abwesenheit hinzufügen Formular wiederkehrend](./assets/add-absence/2-add-absence-form-recurring.png)
+
 1. Klicke auf _Abwesenheit hinzufügen_ und es wird gespeichert.
-   ![Mandanten-Formular](./assets/add-absence/3-absence-added.png)
+   ![Abwesenheit hinzugefügt](./assets/add-absence/3-absence-added.png)
+
+   Wiederkehrende Abwesenheiten haben ein kreisförmiges Symbol, das ihre Wiederholung kennzeichnet.
+
+   ![Wiederkehrende Abwesenheit hinzugefügt](./assets/add-absence/3-absence-added-recurring.png)
 
 </Steps>

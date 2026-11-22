@@ -1,10 +1,12 @@
 ---
 title: Kalender Übersicht
 description: Der OpenReception-Kalender ist optimiert, um Dir alle Deine heutigen Termine anzuzeigen und verfügbare Zeitfenster für zukünftige Termine zu finden
-lastUpdated: 2026-03-01
+lastUpdated: 2026-11-22
 sidebar:
   order: 1
 ---
+
+import {Badge} from "@astrojs/starlight/components";
 
 Die OpenReception Kalenderseite zeigt Dir standardmäßig alle Termine und verfügbaren Zeitfenster an.
 
@@ -38,7 +40,7 @@ Aktive Filter werden hier ebenfalls reflektiert, wie im Bereich [Filter](#filter
 
 ## Seitenleiste
 
-Die Kalender-Seitenleiste zeigt Anzeigeoptionen, Filter und einen weiteren Schnell-Navigationskalender. Auf kleineren Bildschirmen ist diese Seitenleiste standardmäßig ausgeblendet und kann durch Klicken auf die **Filter**-Schaltfläche in der oberen rechten Ecke geöffnet werden. Auf größeren Bildschirmen ist diese Seitenleiste immer sichtbar.
+Die Kalender-Seitenleiste zeigt Filter und einen weiteren Schnell-Navigationskalender. Auf kleineren Bildschirmen ist diese Seitenleiste standardmäßig ausgeblendet und kann durch Klicken auf die **Filter**-Schaltfläche in der oberen rechten Ecke geöffnet werden. Auf größeren Bildschirmen ist diese Seitenleiste immer sichtbar.
 
 ![Kalender-Seitenleiste immer sichtbar auf größeren Bildschirmen](./assets/calendar-overview/3-calendar-sidebar.png)
 
@@ -46,7 +48,7 @@ Die Kalender-Seitenleiste zeigt Anzeigeoptionen, Filter und einen weiteren Schne
 
 Das Zoom-Feature ermöglicht es Dir, auch die kürzesten Termine in einer größeren Ansicht zu sehen. Dies ist besonders nützlich, wenn Du viele Termine in einem kurzen Zeitraum hast.
 
-Du kannst den Zoom in der Seitenleiste ändern. Er wird für Deine nächsten Besuche gespeichert.
+Du kannst den Zoom über dem Kalender mit den Lupen-Symbolen ändern. Er wird für Deine nächsten Besuche gespeichert.
 
 ![Kalender mit Zoom für große Zeitrahmen bei kürzeren Terminen](./assets/calendar-overview/4-calendar-zoom.png)
 
@@ -54,15 +56,21 @@ Du kannst den Zoom in der Seitenleiste ändern. Er wird für Deine nächsten Bes
 
 Die Wochenübersicht ermöglicht es Dir, die gesamte Woche auf einen Blick zu sehen. Dies ist besonders nützlich, wenn Du eine breite Übersicht Deiner Termine und verfügbaren Zeitfenster haben möchtest.
 
-Du kannst die Ansicht in der Seitenleiste ändern. Sie wird für Deine nächsten Besuche gespeichert.
-
-![Kalender-Seitenleiste mit Icons zum Umschalten auf die Wochenansicht](./assets/calendar-overview/5-calendar-sidebar-week-view.png)
+Du kannst die Ansicht über dem Kalender ändern. Sie wird für Deine nächsten Besuche gespeichert.
 
 Es gibt eine Wochenansicht, die nur die Arbeitstage (Montag bis Freitag) anzeigt, und eine Wochenansicht, die alle Tage der Woche (Montag bis Sonntag) anzeigt.
 
-![Kalender mit Wochenansicht (ohne Wochenende)](./assets/calendar-overview/6-calendar-week-view.png)
+![Kalender mit Wochenansicht (ohne Wochenende)](./assets/calendar-overview/5-calendar-week-view.png)
 
-![Kalender mit vollständiger Wochenansicht](./assets/calendar-overview/7-calendar-full-week-view.png)
+![Kalender mit vollständiger Wochenansicht](./assets/calendar-overview/6-calendar-full-week-view.png)
+
+## Gruppieren <Badge text="Premium-Funktion" variant="danger" />
+
+Wenn Du auf den Akteur-Knopf (Person und Stern) über dem Kalender klickst, werden die Termine nach Akteuren gruppiert. Jeder Akteur erhält eine eigene Spalte innerhalb eines Tages. Dies ermöglicht es Dir, schnell zu sehen, welche Termine zu welchen Akteuren gehören.
+
+Dies funktioniert in der Tages- und Wochenansicht.
+
+![Kalender mit gruppierter Ansicht](./assets/calendar-overview/7-calendar-grouped.png)
 
 ## Filter
 
@@ -93,3 +101,26 @@ Wenn Du auf die E-Mail-Adresse klickst, wird Deine E-Mail-Anwendung automatisch 
 Wenn Du auf die Telefonnummer klickst, wird automatisch ein Anruf gestartet, wenn Du eine Telefon-App auf Deinem Gerät installiert hast.
 
 ![Termindetails im Kalender](./assets/calendar-overview/9-appointment-details.png)
+
+Über das Kontextmenü in der oberen rechten Ecke kannst Du zusätzliche Aktionen im Zusammenhang mit dem Termin ausführen, wie zum Beispiel:
+
+- [Termin verschieben](/de/calendar/move-appointment)
+- [Folgetermin hinzufügen](/de/calendar/follow-up-appointment)
+- [Kalenderdatei herunterladen](/de/calendar/download-calendar-file)
+- [Termin absagen](/de/calendar/cancel-appointment)
+
+![Kontextmenü für Terminaktionen](./assets/calendar-overview/10-appointment-details-options.png)
+
+### Termindetails bei Maus-Hover <Badge text="Plus-Funktion" variant="danger" />
+
+Die Termindetails werden angezeigt, wenn Du mit der Maus über einen Termin in der
+Kalenderansicht fährst. So kannst Du schnell die relevanten Informationen sehen, ohne
+das vollständige Terminmodal zu öffnen.
+
+![Termindetails bei Maus-Hover](./assets/calendar-overview/11-calendar-appointment-details-hover.png)
+
+## Wartezeit <Badge text="Premium-Funktion" variant="danger" />
+
+Die Wartezeit wird angezeigt, sobald Du den [Termin-Status](/de/calendar/appointment-progress) zum ersten Mal geändert hast.
+
+![Termindetails bei Maus-Hover mit Wartezeit](./assets/calendar-overview/12-calendar-appointment-details-waiting-time.png)

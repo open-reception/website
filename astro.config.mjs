@@ -126,6 +126,14 @@ export default defineConfig({
           },
         },
         {
+          label: "Automation",
+          collapsed: true,
+          items: [{autogenerate: {directory: "automation"}}],
+          translations: {
+            de: "Automatisierung",
+          },
+        },
+        {
           label: "Community",
           items: [{autogenerate: {directory: "community"}}],
           translations: {

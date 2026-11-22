@@ -1,22 +1,25 @@
 ---
 title: Notifications
 description: The OpenReception notification system makes sure you are informed, if a client requests an appointment or other staff members cancel appointments.
-lastUpdated: 2026-03-11
+lastUpdated: 2026-11-22
 sidebar:
   order: 5
 ---
 
-The OpenReception notification system makes sure staff members are informed, if a client requests an appointment or appointments are cancelled.
+The OpenReception notification system makes sure staff members are informed, if
+
+- a client requests an appointment or
+- a client cancels an appointment.
 
 Only staff members get notifications.
 
-Notifications only exist within the OpenReception dashboard.
+Notifications only exist within the OpenReception dashboard. For each notification staff members will get an email.
 
 ## Subscribe to Notifications
 
 To get notifications you have to add the respective staff member to the [channel](/channels).
 
-![Edit channel form with staff members for notifications](./assets/notifications/1-edit-channel-form.png)
+![Edit channel form with staff members for notifications](./assets/notifications/1-edit-channel-notifications.png)
 
 ## Notification Badge
 
@@ -33,3 +36,15 @@ Clicking the bell-icon, will open the notification list.
 ![Notification list](./assets/notifications/3-notification-list.png)
 
 Some notifications allow you to click on them. You will be led to the respective page or appointment.
+
+## Notification Types
+
+### Appointment Requested
+
+This notification is triggered when a client requests an appointment (channel is configured to only allow appointment requests).
+
+### Appointment Canceled
+
+This notification is triggered when a client cancels an appointment. It will contain the contact information of the client.
+
+![Notification Appointment Canceled](./assets/notifications/4-notification-canceled-appointment.png)

@@ -1,8 +1,43 @@
 ---
 title: Account Settings
-description: tbd
-lastUpdated: 2026-03-01
-draft: true
+description: Change your account settings
+lastUpdated: 2026-11-22
 sidebar:
+  badge: New
   order: 10
 ---
+
+import {LinkCard} from "@astrojs/starlight/components";
+import {CardGrid} from "@astrojs/starlight/components";
+
+Go to the account settings using the bottom of the navigation sidebar.
+
+![Account link in the navigation sidebar](./assets/account/1-account-link.png)
+
+On the account overview page you will be able to select the settings you want to change.
+
+![Account overview](./assets/account/2-account-overview.png)
+
+<CardGrid>
+  <LinkCard
+    title="Account Settings"
+    href="#account-settings"
+    description="Name and E-Mail language"
+  />
+  <LinkCard
+    title="Manage Passkeys"
+    href="/account/manage-passkeys"
+    description="Add up to three Passkeys"
+  />
+  <LinkCard
+    title="Change Passphrase"
+    href="/account/change-global-admin-passphrase"
+    description="Change your current passphrase"
+  />
+</CardGrid>
+
+## Account Settings
+
+In the account settings, you can update your name and E-Mail language preferences.
+
+![Account settings form](./assets/account/3-account-settings.png)

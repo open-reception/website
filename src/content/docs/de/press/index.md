@@ -11,7 +11,7 @@ Diese Seite enthält Pressemitteilungen und Partner-Informationen über dieses P
 
 ## Pressemitteilungen per E-Mail
 
-Sie können die OpenReception Pressemitteilung bequem [per E-Mail abonnieren](https://app.keila.io/forms/nfrm_Q3LDPM3Z).
+Du kannst die OpenReception Pressemitteilungen bequem [per E-Mail abonnieren](https://app.keila.io/forms/nfrm_Q3LDPM3Z).
 
 ## Aktuelle Mitteilungen
 

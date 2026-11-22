@@ -1,0 +1,69 @@
+---
+title: Termin-Status
+description: Verfolge den Fortschritt von Terminen im Kalender.
+lastUpdated: 2026-11-22
+sidebar:
+  badge: Neu
+  order: 5
+---
+
+import {Badge} from "@astrojs/starlight/components";
+import {Steps} from "@astrojs/starlight/components";
+
+Wenn ein Termin heute stattfindet, wird der Terminfortschritt direkt in der Kalenderübersicht angezeigt.
+
+Ein Fußspuren-Symbol wird auf dem heutigen Termin angezeigt:
+
+![Kalender Fußspuren-Symbol auf heutigem Termin](./assets/appointment-progress/1-calendar-overview-with-progress-icon.png)
+
+Wenn Du auf den Termin klicken, kannst Du den Terminfortschritt ändern. Du hast folgende Optionen:
+
+- Noch nicht da
+- Wartet
+- In Bearbeitung
+- Erledigt
+
+![Termin-Details Modal mit Termin-Status Dropdown](./assets/appointment-progress/2-appointment-details-with-progress-dropdown.png)
+
+## Benutzerdefinierte Termin-Status <Badge text="Premium Funktion" variant="danger" />
+
+Du kannst benutzerdefinierte Status für Deine Termine festlegen. So kannst Du den Fortschritt auf eine Weise verfolgen, die zu Deinem Workflow passt.
+
+![Individuelle Termin-Status im Kalender](./assets/appointment-progress/7-custom-appointment-states-in-calendar.png)
+
+Du kannst benutzerdefinierte Status im Einstellungsbereich festlegen. Um sie zu verwalten
+
+<Steps>
+
+1. Navigiere zum Einstellungsbereich des Dashboards und klicke auf _Termin-Status_.
+
+   ![Einstellungsübersicht](./assets/appointment-progress/3-settings-overview.png)
+
+1. In den _Termin-Status_ Einstellungen kannst Du die Standard-Status verwalten und benutzerdefinierte hinzufügen.
+
+   ![Termin-Status bearbeiten Formular](./assets/appointment-progress/4-custom-appointment-progress-steps.png)
+
+1. Am Ende der Liste kannst Du einen neuen Status hinzufügen. Innerhalb eines Status kannst Du
+   - Den **Status** festlegen, einen eindeutigen Namen für diesen Status
+   - Die **Gruppe** festlegen, eine von **Noch nicht da**, **Wartet**, **In Bearbeitung** oder **Erledigt**
+   - Das **Symbol** festlegen, das für diesen Status im Kalender angezeigt wird
+   - Die **Namen** festlegen, die für diesen Status im Kalender angezeigt werden; lege sie für jede von Dir unterstützte Sprache fest
+
+   ![Formularfelder zum Bearbeiten von Termin-Status](./assets/appointment-progress/5-adding-a-custom-progress-step.png)
+
+1. Klicke auf _Speichern_, um Deine Änderungen zu übernehmen.
+
+   ![Termin-Status gespeichert, zeigt Benachrichtigung](./assets/appointment-progress/6-saved-custom-progress-step.png)
+
+</Steps>
+
+## Wartezeit <Badge text="Premium Funktion" variant="danger" />
+
+Zusätzlich wird die Wartezeit im Kalender angezeigt, entweder
+
+- wenn Du mit der Maus über den Termin im Kalender fährst <Badge text="Plus Funktion" variant="danger" />
+- oder im Termin-Details Modal.
+
+Die Wartezeit beginnt automatisch, sobald der Terminfortschritt zum ersten Mal geändert wird.
+
+![Kalender zeigt Fortschritt und Wartezeit](./assets/appointment-progress/8-calendar-progress-and-waiting-time.png)

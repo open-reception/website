@@ -1,0 +1,69 @@
+---
+title: Appointment Progress
+description: Track the progress of appointments within the calendar.
+lastUpdated: 2026-11-17
+sidebar:
+  badge: New
+  order: 5
+---
+
+import {Badge} from "@astrojs/starlight/components";
+import {Steps} from "@astrojs/starlight/components";
+
+When an appointment takes place today, it will show the appointment progress right in the calendar overview.
+
+A footsteps icon will appear on today's appointment:
+
+![Calendar Footsteps icon on todays appointment](./assets/appointment-progress/1-calendar-overview-with-progress-icon.png)
+
+Once you click on the appointment you will be able to change the appointment progress. You have the following options:
+
+- Not here yet
+- Waiting
+- In Progress
+- Done
+
+![Appointment details modal progress dropdown](./assets/appointment-progress/2-appointment-details-with-progress-dropdown.png)
+
+## Custom Progress Steps <Badge text="Premium Feature" variant="danger" />
+
+You can define custom progress steps for your appointments. This allows you to track the progress in a way that fits your workflow.
+
+![Custom appointment states in the calendar](./assets/appointment-progress/7-custom-appointment-states-in-calendar.png)
+
+You can define custom progress steps in the settings area. To manage them
+
+<Steps>
+
+1. Navigate to the settings section of the dashboard and click on _Appointment Progress_.
+
+   ![Settings overview](./assets/appointment-progress/3-settings-overview.png)
+
+1. In the _Appointment Progress_ settings, you can manage default progress steps and add custom ones.
+
+   ![Edit appointment progress steps](./assets/appointment-progress/4-custom-appointment-progress-steps.png)
+
+1. At the bottom of the list you can _add a state_. Within a state you can
+   - Set the **State**, a unique name for this status
+   - Set the **Group**, wich is one of **Not Started**, **Waiting**, **In Progress**, or **Done**
+   - Set the **Icon**, which will be displayed for this status in the calendar overview
+   - Set the **Names**, which will be displayed for this status in the calendar overview; set them for each language you support
+
+   ![Form fields for editing a progress step](./assets/appointment-progress/5-adding-a-custom-progress-step.png)
+
+1. Click _Save_ to apply your changes.
+
+   ![Progress definition saved, showing notification](./assets/appointment-progress/6-saved-custom-progress-step.png)
+
+</Steps>
+
+## Waiting Time <Badge text="Premium Feature" variant="danger" />
+
+Additionally the waiting will be shown in the calendar, either
+
+- once you hover with the mouse over the appointment in the calendar <Badge text="Plus Feature" variant="danger" />
+- or in the appointment details modal.
+
+The waiting time will automatically start once the appointment progress is changed for the first time.
+
+![Calendar showing progress and waiting time](./assets/appointment-progress/8-calendar-progress-and-waiting-time.png)

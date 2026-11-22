@@ -1,10 +1,14 @@
 ---
 title: Calendar Overview
 description: The OpenReception calendar is optimized to show you all your appointments today and find available slots for future appointments
-lastUpdated: 2026-03-01
+lastUpdated: 2026-11-22
 sidebar:
   order: 1
 ---
+
+import {Badge} from "@astrojs/starlight/components";
+import {CardGrid} from "@astrojs/starlight/components";
+import {LinkCard} from "@astrojs/starlight/components";
 
 The OpenReception calendar page shows you all appointments and available slots by default.
 
@@ -38,7 +42,7 @@ Active filters are also reflected here as described in the [filters](#filters) s
 
 ## Sidebar
 
-The calendar sidebar shows display options, filters and another quick navigation calendar. On smaller screens this sidebar is hidden by default and can be opened by clicking the **filter** button in the top right corner. On larger screens this sidebar is always visible.
+The calendar sidebar shows filters and another quick navigation calendar. On smaller screens this sidebar is hidden by default and can be opened by clicking the **filter** button in the top right corner. On larger screens this sidebar is always visible.
 
 ![Calendar sidebar always visible on larger screens](./assets/calendar-overview/3-calendar-sidebar.png)
 
@@ -46,7 +50,7 @@ The calendar sidebar shows display options, filters and another quick navigation
 
 The zoom feature allows you to see even the shortest appointments in a larger view. This is especially useful if you have a lot of appointments in a short timeframe.
 
-You can change the zoom inside the sidebar. It will be remembered for your next visits.
+You can change the zoom above the calendar with the magnifying glass icons. It will be remembered for your next visits.
 
 ![Calendar with zoom for large timeframes on shorter appointments](./assets/calendar-overview/4-calendar-zoom.png)
 
@@ -54,15 +58,21 @@ You can change the zoom inside the sidebar. It will be remembered for your next 
 
 The week view allows you to see the entire week at once. This is especially useful if you want to have a broad overview of your appointments and available slots.
 
-You can change the view inside the sidebar. It will be remembered for your next visits.
-
-![Calendar sidebar with icons for switching to week view](./assets/calendar-overview/5-calendar-sidebar-week-view.png)
+You can change the view above the calendar. It will be remembered for your next visits.
 
 There is a week view that shows only the working days (Monday to Friday) and a week view that shows all days of the week (Monday to Sunday).
 
-![Calendar with week view (excluding weekends)](./assets/calendar-overview/6-calendar-week-view.png)
+![Calendar with week view (excluding weekends)](./assets/calendar-overview/5-calendar-week-view.png)
 
-![Calendar with full week view](./assets/calendar-overview/7-calendar-full-week-view.png)
+![Calendar with full week view](./assets/calendar-overview/6-calendar-full-week-view.png)
+
+## Grouping <Badge text="Premium-Feature" variant="danger" />
+
+If you click the agent icon button (person and star) above the calendar, the appointments will be grouped by agent. Each agent gets their own column within a day. This allows you to quickly see which appointments belong to which agent.
+
+This will work in day- and week-views.
+
+![Calendar with grouped view](./assets/calendar-overview/7-calendar-grouped.png)
 
 ## Filters
 
@@ -93,3 +103,63 @@ Clicking on the E-Mail Address will automatically open your E-Mail application.
 Clicking on the Phone Number will automatically start a call, if you have a phone app installed on your device.
 
 ![Appointment Details withing the calendar](./assets/calendar-overview/9-appointment-details.png)
+
+From the context menu in the top right corner you can perform additional actions related to the appointment like:
+
+- [move the appointment](/calendar/move-appointment)
+- [add a follow-up appointment](/calendar/follow-up-appointment)
+- download a calendar file
+- [cancel the appointment](/calendar/cancel-appointment)
+
+![Context menu for appointment actions](./assets/calendar-overview/10-appointment-details-options.png)
+
+If the appointment is today, you will be able to set the [appointment progress](/calendar/appointment-progress) directly from the calendar view.
+
+### Preview Details on Hover <Badge text="Plus-Feature" variant="danger" />
+
+The appointment details will be shown when hovering over an appointment in the
+calendar view. This allows you to quickly see the relevant information without
+opening the full appointment modal.
+
+![Appointment details on hover](./assets/calendar-overview/11-calendar-appointment-details-hover.png)
+
+## Waiting Time <Badge text="Premium-Feature" variant="danger" />
+
+The waiting time will start showing as soon as you changed the [appointment status](/calendar/appointment-progress) for the first time.
+
+![Appointment details on hover with waiting time](./assets/calendar-overview/12-calendar-appointment-details-waiting-time.png)
+
+## Additional Features in the Calendar
+
+<CardGrid>
+  <LinkCard
+    title="Appointment Progress"
+    href="./appointment-progress"
+    description="Track the progress of appointments within the calendar"
+  />
+  <LinkCard
+    title="Confirm Appointment"
+    href="./confirm-appointment"
+    description="Confirm a requested appointment"
+  />
+  <LinkCard
+    title="Deny Appointment"
+    href="./deny-appointment"
+    description="Deny a requested appointment"
+  />
+  <LinkCard
+    title="Move Appointment"
+    href="./move-appointment"
+    description="Move an existing appointment"
+  />
+  <LinkCard
+    title="Add Follow-Up Appointment"
+    href="./follow-up-appointment"
+    description="Add a follow-up appointment"
+  />
+  <LinkCard
+    title="Cancel Appointment"
+    href="./cancel-appointment"
+    description="Cancel an existing appointment"
+  />
+</CardGrid>

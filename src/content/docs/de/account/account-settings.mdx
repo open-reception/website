@@ -1,8 +1,43 @@
 ---
 title: Kontoeinstellungen
-description: tbd
-lastUpdated: 2026-03-01
-draft: true
+description: Ändere deine Kontoeinstellungen
+lastUpdated: 2026-11-22
 sidebar:
+  badge: Neu
   order: 10
 ---
+
+import {LinkCard} from "@astrojs/starlight/components";
+import {CardGrid} from "@astrojs/starlight/components";
+
+Gehe zu den Kontoeinstellungen über den unteren Bereich der Navigationsleiste.
+
+![Kontolink in der Navigationsleiste](./assets/account/1-account-link.png)
+
+Auf der Kontoübersichtsseite kannst du die Einstellungen auswählen, die du ändern möchtest.
+
+![Konto-Übersicht](./assets/account/2-account-overview.png)
+
+<CardGrid>
+  <LinkCard
+    title="Kontoeinstellungen"
+    href="#kontoeinstellungen"
+    description="Name und E-Mail-Sprache"
+  />
+  <LinkCard
+    title="Passkeys verwalten"
+    href="/de/account/manage-passkeys"
+    description="Füge bis zu drei Passkeys hinzu"
+  />
+  <LinkCard
+    title="Passphrase ändern"
+    href="/de/account/change-global-admin-passphrase"
+    description="Ändere deine aktuelle Passphrase"
+  />
+</CardGrid>
+
+## Kontoeinstellungen
+
+In den Kontoeinstellungen kannst du deinen Namen und deine E-Mail-Sprachpräferenzen aktualisieren.
+
+![Kontoeinstellungen Formular](./assets/account/3-account-settings.png)

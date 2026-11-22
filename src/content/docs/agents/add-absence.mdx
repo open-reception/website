@@ -1,8 +1,9 @@
 ---
 title: Add Absence
 description: This step-by-step guide shows you how to add an absence for an OpenReception agent
-lastUpdated: 2026-03-01
+lastUpdated: 2026-11-22
 sidebar:
+  badge: New
   order: 5
 ---
 
@@ -15,13 +16,28 @@ import {Steps} from "@astrojs/starlight/components";
    ![Empty absence list](./assets/add-absence/1-empty-absences-list.png)
 
 1. A modal with a form opens.
+   - Select the absent **type** one-time or recurring
    - Select the absent **agent**
    - Change the **reason**, if you want to track it here.
    - Select a range for the absence. The **to date** must be in the future.
 
    ![Add absence form](./assets/add-absence/2-add-absence-form.png)
 
+   If you've selected a recurring absence, additional options for the recurrence pattern will appear:
+   - Select the **weekday/s**
+   - Select the **from** and **to** times
+
+   :::tip
+   To set this for a long period select a **To Date** far in the future.
+   :::
+
+   ![Add absence form](./assets/add-absence/2-add-absence-form-recurring.png)
+
 1. Click _Add Absence_ and it will be saved.
-   ![Add tenant form](./assets/add-absence/3-absence-added.png)
+   ![Add absence form saved](./assets/add-absence/3-absence-added.png)
+
+   Recurring absences will have a circular icon indicating their recurrence.
+
+   ![Add absence form saved](./assets/add-absence/3-absence-added-recurring.png)
 
 </Steps>

@@ -167,6 +167,7 @@
         /* Badges */
         --sl-badge-default-bg: var(--sl-color-white);
         --sl-badge-default-text: var(--primary);
+        --sl-badge-default-border: transparent;
         --sl-badge-danger-bg: oklch(from var(--destructive) l c h / 80%);
         --sl-badge-danger-border: transparent;
     }
@@ -393,7 +394,7 @@
     ol,
     ul,
     menu {
-        list-style: inherit;
+        list-style: disc;
         padding-left: 1.5rem;
     }
 
